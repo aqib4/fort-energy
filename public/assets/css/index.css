@@ -47,7 +47,7 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 40px;
-  height: 64px;
+  height: 80px;
   background: rgba(225, 222, 204, 0.92); /* background-color */
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--rule);
@@ -80,6 +80,46 @@ nav {
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--accent-color); }
+
+.nav-item-dropdown {
+  position: relative;
+}
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--background-color);
+  list-style: none;
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 10px 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s ease;
+  z-index: 101;
+  border: 1px solid var(--rule);
+}
+.nav-item-dropdown:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-dropdown li {
+  padding: 0;
+}
+.nav-dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.nav-dropdown li a:hover {
+  background: rgba(10, 107, 82, 0.05);
+}
+
 .nav-cta {
   background: var(--accent-color); color: var(--background-color) !important;
   padding: 8px 18px; font-size: 12px !important;
@@ -125,8 +165,25 @@ footer {
   .footer-bottom { padding: 20px 32px; flex-direction: column; gap: 8px; text-align: center; }
   nav { padding: 0 24px; }
   .nav-links { display: none; }
-  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; background: var(--background-color); padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--rule); z-index: 99; }
+  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 80px; left: 0; right: 0; background: var(--background-color); padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--rule); z-index: 99; }
   .nav-burger { display: flex; }
+  
+  .nav-dropdown {
+    position: static;
+    box-shadow: none;
+    transform: none;
+    border: none;
+    padding: 10px 0 0 15px;
+    opacity: 1;
+    visibility: visible;
+    background: transparent;
+    display: none;
+  }
+  .nav-item-dropdown:hover .nav-dropdown,
+  .nav-item-dropdown:active .nav-dropdown,
+  .nav-item-dropdown:focus-within .nav-dropdown {
+    display: flex;
+  }
 }
 @media (max-width: 640px) {
   footer { grid-template-columns: 1fr; padding: 40px 20px; }

@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Commercial & Industrial - Fort Energy';
+$pageCss = 'commercial';
 ob_start();
 ?>
 

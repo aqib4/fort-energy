@@ -1,9 +1,7 @@
 <footer>
   <div>
     <div class="footer-brand-name">
-      <div class="nav-logo-mark" style="width:22px;height:22px;">
-        <svg viewBox="0 0 14 14" fill="none"><path d="M7 1L12 4V10L7 13L2 10V4L7 1Z" stroke="white" stroke-width="1.2"/><path d="M7 4L9.5 7L7 10L4.5 7L7 4Z" fill="white" opacity="0.8"/></svg>
-      </div>
+      <img src="/fort-energy/public/assets/img/logo.png" alt="Fort Energy Logo" style="height: 44px; width: auto;">
       FORT ENERGY
     </div>
     <p class="footer-brand-desc">Engineering-led energy systems for commercial sites, residential projects, developments and farms. Designed precisely. Delivered completely.</p>
