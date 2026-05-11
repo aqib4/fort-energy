@@ -7,7 +7,7 @@ ob_start();
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
-    <a href="/" class="bc-item">Home</a>
+    <a href="<?= BASE_URL ?>" class="bc-item">Home</a>
     <span class="bc-sep">/</span>
     <span class="bc-current">Developers &amp; Housebuilders</span>
 </div>
@@ -19,8 +19,8 @@ ob_start();
         <h1 class="hero-h1">Energy strategy<br>for <em>developments</em></h1>
         <p class="hero-sub">Integrated energy system design for residential and mixed-use developments facing grid constraints, planning requirements and increasing electrical demand. Get involved at feasibility — not after planning consent.</p>
         <div class="hero-ctas">
-            <a href="/contact" class="btn-primary">Discuss your project →</a>
-            <a href="/contact" class="btn-secondary">Book a technical call</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-primary">Discuss your project →</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-secondary">Book a technical call</a>
         </div>
     </div>
 
@@ -323,7 +323,7 @@ ob_start();
                     <div class="training-cover-dot"></div>Handover documentation and O&amp;M pack
                 </div>
             </div>
-            <a href="/contact" class="training-cta">Enquire about training →</a>
+            <a href="<?= BASE_URL ?>contact" class="training-cta">Enquire about training →</a>
         </div>
 
         <!-- Training diagram: capability transfer infographic -->
@@ -435,7 +435,7 @@ ob_start();
                 <div class="cs-loc">North West England · Student Accommodation</div>
                 <h3 class="cs-title">Capacity-constrained site — solar and storage avoided grid infrastructure upgrade</h3>
                 <p class="cs-summary">360 kWp in-roof solar array with 200 kWh BESS across a 180-bed student accommodation block. Grid connection capacity was insufficient for full electrification without a substation upgrade costing £1.2M and adding 14 months to the programme. Peak shaving and demand management strategy designed to stay within the existing agreed supply capacity. Infrastructure upgrade avoided entirely. Planning authority satisfied renewable energy condition at detailed stage.</p>
-                <a href="/case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>
@@ -497,7 +497,7 @@ ob_start();
                     </div>
                 </div>
             </div>
-            <a href="/contact" class="lifecycle-cta">Get involved early →</a>
+            <a href="<?= BASE_URL ?>contact" class="lifecycle-cta">Get involved early →</a>
         </div>
     </div>
 </section>
@@ -509,8 +509,8 @@ ob_start();
         <p class="cta-band-sub">The cost of late energy design is programme delay, planning conditions and infrastructure spend that could have been avoided. The earlier we are involved, the more options are available — and the lower the overall project cost.</p>
     </div>
     <div class="cta-group">
-        <a href="/contact" class="btn-primary-dark">Discuss your project →</a>
-        <a href="/contact" class="btn-outline-dark">Book a technical call</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-primary-dark">Discuss your project →</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-outline-dark">Book a technical call</a>
     </div>
 </section>
 

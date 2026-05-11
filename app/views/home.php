@@ -10,8 +10,8 @@ ob_start();
     <h1 class="hero-h1">Energy systems<br>designed for<br><em>performance</em></h1>
     <p class="hero-sub">Solar PV, battery storage, EV charging and building-integrated systems for commercial sites, residential projects, farms and developments. Designed precisely. Delivered completely.</p>
     <div class="hero-ctas">
-      <a href="/fort-energy/public/contact" class="btn-primary">Get a project quote →</a>
-      <a href="/fort-energy/public/contact" class="btn-secondary">Book a technical call</a>
+      <a href="<?= BASE_URL ?>contact" class="btn-primary">Get a project quote →</a>
+      <a href="<?= BASE_URL ?>contact" class="btn-secondary">Book a technical call</a>
     </div>
   </div>
 
@@ -181,7 +181,7 @@ ob_start();
 
   <div class="sectors-grid">
     <!-- Commercial -->
-    <a href="/fort-energy/public/commercial" class="sector-card">
+    <a href="<?= BASE_URL ?>commercial" class="sector-card">
       <div class="sector-top">
         <div class="sector-icon-wrap">
           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -204,7 +204,7 @@ ob_start();
     </a>
 
     <!-- Developers -->
-    <a href="/fort-energy/public/developers" class="sector-card">
+    <a href="<?= BASE_URL ?>developers" class="sector-card">
       <div class="sector-top">
         <div class="sector-icon-wrap">
           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -226,7 +226,7 @@ ob_start();
     </a>
 
     <!-- Residential -->
-    <a href="/fort-energy/public/residential" class="sector-card">
+    <a href="<?= BASE_URL ?>residential" class="sector-card">
       <div class="sector-top">
         <div class="sector-icon-wrap">
           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -250,7 +250,7 @@ ob_start();
 
   <div class="sectors-row2">
     <!-- Agricultural -->
-    <a href="/fort-energy/public/agricultural" class="sector-card">
+    <a href="<?= BASE_URL ?>agricultural" class="sector-card">
       <div class="sector-top">
         <div class="sector-icon-wrap">
           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -272,7 +272,7 @@ ob_start();
     </a>
 
     <!-- BIPV -->
-    <a href="/fort-energy/public/bipv" class="sector-card">
+    <a href="<?= BASE_URL ?>bipv" class="sector-card">
       <div class="sector-top">
         <div class="sector-icon-wrap">
           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -360,7 +360,7 @@ ob_start();
         <div class="cs-location">West Midlands · Manufacturing</div>
         <h3 class="cs-title">480 kWp roof array with 320 kWh BESS and peak shaving control</h3>
         <p class="cs-summary">Rooftop array across three warehouse spans, integrated with a 320 kWh battery system and a PLC-controlled peak shaving strategy. Grid import reduced by 74% during peak tariff periods. Payback modelled at 4.8 years.</p>
-        <a href="/fort-energy/public/case-studies" class="cs-link">View full case study →</a>
+        <a href="<?= BASE_URL ?>case-studies" class="cs-link">View full case study →</a>
       </div>
     </div>
   </div>
@@ -380,7 +380,7 @@ ob_start();
         <li><span class="tier-dot"></span>Performance — solar + storage + EV</li>
         <li><span class="tier-dot"></span>Premium — full integration incl. MVHR</li>
       </ul>
-      <a href="/fort-energy/public/residential" class="tier-cta">View residential systems →</a>
+      <a href="<?= BASE_URL ?>residential" class="tier-cta">View residential systems →</a>
     </div>
   </div>
 </section>
@@ -392,8 +392,8 @@ ob_start();
     <p class="cta-band-sub">Whether you're scoping a 500 kWp commercial roof, designing energy for a development, or specifying BIPV for an architectural project — start with a conversation.</p>
   </div>
   <div class="cta-group">
-    <a href="/fort-energy/public/contact" class="btn-primary" style="white-space:nowrap;">Start an enquiry →</a>
-    <a href="/fort-energy/public/contact" class="btn-secondary" style="white-space:nowrap;">Book a technical call</a>
+    <a href="<?= BASE_URL ?>contact" class="btn-primary" style="white-space:nowrap;">Start an enquiry →</a>
+    <a href="<?= BASE_URL ?>contact" class="btn-secondary" style="white-space:nowrap;">Book a technical call</a>
   </div>
 </section>
 <?php

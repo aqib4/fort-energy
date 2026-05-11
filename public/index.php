@@ -1,14 +1,15 @@
 <?php
 
+require_once __DIR__ . '/../app/config.php';
 require_once __DIR__ . '/../app/core/Router.php';
 
 $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 // remove query string
 $request = strtok($request, '?');
 
-// remove base path (adjustable for deployment)
-$base = '/fort-energy/public';
-if (strpos($request, $base) === 0) {
+// remove base path (handled by BASE_PATH in config.php)
+$base = BASE_PATH;
+if ($base !== '' && strpos($request, $base) === 0) {
     $request = substr($request, strlen($base));
 }
 if ($request === '') {

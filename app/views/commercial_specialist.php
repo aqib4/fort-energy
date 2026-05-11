@@ -5,9 +5,9 @@ ob_start();
 ?>
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
-    <a href="/" class="bc-item">Home</a>
+    <a href="<?= BASE_URL ?>" class="bc-item">Home</a>
     <span class="bc-sep">/</span>
-    <a href="/commercial" class="bc-item">Commercial &amp; Industrial</a>
+    <a href="<?= BASE_URL ?>commercial" class="bc-item">Commercial &amp; Industrial</a>
     <span class="bc-sep">/</span>
     <span class="bc-current">Specialist services</span>
 </div>
@@ -19,8 +19,8 @@ ob_start();
         <h1 class="hero-h1">Specialist<br>commercial<br><em>services</em></h1>
         <p class="hero-sub">Five capabilities deployed where standard commercial solutions are not appropriate. Each project is scoped individually — design and delivery matched precisely to site conditions, operational requirements and regulatory context.</p>
         <div class="hero-ctas">
-            <a href="/contact" class="btn-primary">Request a specialist consultation →</a>
-            <a href="/commercial" class="btn-secondary">← Back to commercial</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-primary">Request a specialist consultation →</a>
+            <a href="<?= BASE_URL ?>commercial" class="btn-secondary">← Back to commercial</a>
         </div>
     </div>
 
@@ -285,7 +285,7 @@ ob_start();
             <p>Specialist services are not packaged products. There is no standard system size, no default specification and no fixed price list — because the projects that require specialist input are, by definition, non-standard.</p>
             <p>Each project begins with a detailed technical conversation to establish what the site requires, what constraints apply, and what the correct approach is. Design and delivery are then matched precisely to those conditions.</p>
         </div>
-        <a href="/contact" class="closing-cta">Request a specialist consultation →</a>
+        <a href="<?= BASE_URL ?>contact" class="closing-cta">Request a specialist consultation →</a>
     </div>
 
     <div class="closing-right">
@@ -336,14 +336,14 @@ ob_start();
         <p class="cta-band-sub">If your project sits outside the standard commercial scope — unusual environment, off-grid requirement, power quality problem or bespoke control need — start with a technical conversation. No obligation. No generic proposal.</p>
     </div>
     <div class="cta-group">
-        <a href="/contact" class="btn-primary" style="white-space:nowrap;">Request a specialist consultation →</a>
-        <a href="/contact" class="btn-secondary" style="white-space:nowrap;">Book a technical call</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-primary" style="white-space:nowrap;">Request a specialist consultation →</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-secondary" style="white-space:nowrap;">Book a technical call</a>
     </div>
 </section>
 
 <!-- BACK TO COMMERCIAL STRIP -->
 <div class="back-strip">
-    <a href="/commercial" class="back-link">← Commercial &amp; Industrial</a>
+    <a href="<?= BASE_URL ?>commercial" class="back-link">← Commercial &amp; Industrial</a>
     <span class="back-sep">|</span>
     <span class="back-text">Also in commercial: Solar PV · BESS · Load balancing · Hybrid microgrids · Standby generation · PLC &amp; BMS control</span>
 </div>

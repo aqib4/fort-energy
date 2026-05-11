@@ -5,7 +5,7 @@ $pageCss = 'residentials';
 ?>
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
-    <a href="/" class="bc-item">Home</a>
+    <a href="<?= BASE_URL ?>" class="bc-item">Home</a>
     <span class="bc-sep">/</span>
     <span class="bc-current">Residential Systems</span>
 </div>
@@ -17,8 +17,8 @@ $pageCss = 'residentials';
         <h1 class="hero-h1">Structured energy<br>systems for<br><em>every home</em></h1>
         <p class="hero-sub">Solar, battery storage, EV charging and ventilation systems for high-performance homes. Designed on real energy usage patterns — not theoretical outputs. Three tiers, one engineering standard.</p>
         <div class="hero-ctas">
-            <a href="/contact" class="btn-primary">Get a system designed for your home →</a>
-            <a href="/contact" class="btn-secondary">Talk to an engineer</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-primary">Get a system designed for your home →</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-secondary">Talk to an engineer</a>
         </div>
     </div>
 
@@ -175,7 +175,7 @@ $pageCss = 'residentials';
                     <span class="tier-spec-val">Basic app</span>
                 </div>
             </div>
-            <a href="/contact" class="tier-cta essential-cta">Get a quote →</a>
+            <a href="<?= BASE_URL ?>contact" class="tier-cta essential-cta">Get a quote →</a>
         </div>
 
         <!-- Tier 02: Performance — RECOMMENDED -->
@@ -211,7 +211,7 @@ $pageCss = 'residentials';
                     <span class="tier-spec-val">Full dashboard</span>
                 </div>
             </div>
-            <a href="/contact" class="tier-cta performance-cta">Get a quote →</a>
+            <a href="<?= BASE_URL ?>contact" class="tier-cta performance-cta">Get a quote →</a>
         </div>
 
         <!-- Tier 03: Premium -->
@@ -247,15 +247,15 @@ $pageCss = 'residentials';
                     <span class="tier-spec-val">Whole-home</span>
                 </div>
             </div>
-            <a href="/contact" class="tier-cta premium-cta">Get a quote →</a>
+            <a href="<?= BASE_URL ?>contact" class="tier-cta premium-cta">Get a quote →</a>
         </div>
 
     </div>
 
     <!-- Sub-page links -->
     <div class="reveal" style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="/residential/solar-reroof" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;color:var(--teal);text-transform:uppercase;text-decoration:none;border:1px solid rgba(10,107,82,0.3);padding:10px 16px;background:var(--teal-bg);transition:background 0.2s;" onmouseover="this.style.background='rgba(10,107,82,0.2)'" onmouseout="this.style.background='var(--teal-bg)'">Solar reroof →</a>
-        <a href="/residential/custom" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;color:var(--teal);text-transform:uppercase;text-decoration:none;border:1px solid rgba(10,107,82,0.3);padding:10px 16px;background:var(--teal-bg);transition:background 0.2s;" onmouseover="this.style.background='rgba(10,107,82,0.2)'" onmouseout="this.style.background='var(--teal-bg)'">Custom residential systems →</a>
+        <a href="<?= BASE_URL ?>residential/solar-reroof" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;color:var(--teal);text-transform:uppercase;text-decoration:none;border:1px solid rgba(10,107,82,0.3);padding:10px 16px;background:var(--teal-bg);transition:background 0.2s;" onmouseover="this.style.background='rgba(10,107,82,0.2)'" onmouseout="this.style.background='var(--teal-bg)'">Solar reroof →</a>
+        <a href="<?= BASE_URL ?>residential/custom" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;color:var(--teal);text-transform:uppercase;text-decoration:none;border:1px solid rgba(10,107,82,0.3);padding:10px 16px;background:var(--teal-bg);transition:background 0.2s;" onmouseover="this.style.background='rgba(10,107,82,0.2)'" onmouseout="this.style.background='var(--teal-bg)'">Custom residential systems →</a>
     </div>
 </section>
 
@@ -369,8 +369,8 @@ $pageCss = 'residentials';
         </div>
         <div class="enhance-divider"></div>
         <div class="pills">
-            <a href="/residential/solar-reroof" class="pill-link">Solar reroof →</a>
-            <a href="/residential/custom" class="pill-link">Custom systems →</a>
+            <a href="<?= BASE_URL ?>residential/solar-reroof" class="pill-link">Solar reroof →</a>
+            <a href="<?= BASE_URL ?>residential/custom" class="pill-link">Custom systems →</a>
         </div>
     </div>
 </div>
@@ -439,7 +439,7 @@ $pageCss = 'residentials';
                         <div class="cs-outcome-dot"></div>Payback modelled at 6.8 years
                     </div>
                 </div>
-                <a href="/case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>
@@ -484,7 +484,7 @@ $pageCss = 'residentials';
                     </div>
                 </div>
             </div>
-            <a href="/contact" style="display:block;text-align:center;background:var(--teal);color:var(--white);font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:0.05em;padding:16px;text-decoration:none;margin-top:28px;transition:background 0.2s;" onmouseover="this.style.background='var(--teal-lt)'" onmouseout="this.style.background='var(--teal)'">Get a system designed for your home →</a>
+            <a href="<?= BASE_URL ?>contact" style="display:block;text-align:center;background:var(--teal);color:var(--white);font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:0.05em;padding:16px;text-decoration:none;margin-top:28px;transition:background 0.2s;" onmouseover="this.style.background='var(--teal-lt)'" onmouseout="this.style.background='var(--teal)'">Get a system designed for your home →</a>
         </div>
     </div>
 </section>
@@ -496,8 +496,8 @@ $pageCss = 'residentials';
         <p class="cta-band-sub">Every system is sized against real consumption data — not a generic kWp figure. Tell us about your home, your usage and your goals. We'll send you a detailed design and financial model.</p>
     </div>
     <div class="cta-group">
-        <a href="/contact" class="btn-primary-dark">Start a system design →</a>
-        <a href="/contact" class="btn-outline-dark">Talk to an engineer</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-primary-dark">Start a system design →</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-outline-dark">Talk to an engineer</a>
     </div>
 </section>
 

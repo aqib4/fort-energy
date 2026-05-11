@@ -11,8 +11,8 @@ ob_start();
         <h1 class="hero-h1">Commercial &amp; industrial<br>energy <em>systems</em></h1>
         <p class="hero-sub">Engineered solutions to reduce energy costs, manage peak demand and improve operational resilience. Designed around real-world site constraints — not ideal conditions.</p>
         <div class="hero-ctas">
-            <a href="/contact" class="btn-primary">Request a feasibility review →</a>
-            <a href="/contact" class="btn-secondary">Book a technical call</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-primary">Request a feasibility review →</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-secondary">Book a technical call</a>
         </div>
     </div>
 
@@ -326,7 +326,7 @@ ob_start();
             <div class="sc-title">Specialist commercial services</div>
             <div class="sc-desc">Power quality analysis, off-grid solutions, temporary site supplies, harsh environment systems and custom control panel design, build and maintenance. Where standard solutions don't apply.</div>
         </div>
-        <a href="/commercial/specialist-services" class="sc-link">View specialist services →</a>
+        <a href="<?= BASE_URL ?>commercial/specialist" class="sc-link">View specialist services →</a>
     </div>
 </section>
 
@@ -390,7 +390,7 @@ ob_start();
                 <div class="cs-loc">West Midlands · Commercial Office</div>
                 <h3 class="cs-title">Solar, storage and generator integration within DNO import limits</h3>
                 <p class="cs-summary">245 kWp rooftop array with 180 kWh BESS and a 150 kVA standby generator configured as a hybrid system under PLC control. DNO export set to zero. Grid import reduced by 61% during working hours. Generator runtime reduced from 180 to 12 hours per year. Payback modelled at 5.2 years against current tariff.</p>
-                <a href="/case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>
@@ -452,7 +452,7 @@ ob_start();
                     </div>
                 </div>
             </div>
-            <a href="/contact" class="proc-cta">Start with a feasibility review →</a>
+            <a href="<?= BASE_URL ?>contact" class="proc-cta">Start with a feasibility review →</a>
         </div>
     </div>
 </section>
@@ -559,8 +559,8 @@ ob_start();
         <p class="cta-band-sub">We model your system against actual half-hourly consumption data before recommending anything. No generic sizing. No overselling. A clear picture of what works for your site.</p>
     </div>
     <div class="cta-group">
-        <a href="/contact" class="btn-primary-dark">Request a feasibility review →</a>
-        <a href="/contact" class="btn-outline-dark">Book a technical call</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-primary-dark">Request a feasibility review →</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-outline-dark">Book a technical call</a>
     </div>
 </section>
 
