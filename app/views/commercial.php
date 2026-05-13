@@ -1,6 +1,18 @@
 <?php
 $pageTitle = 'Commercial & Industrial - Fort Energy';
 $pageCss = 'commercial';
+$activePage   = 'commercial';
+$metaDesc     = 'PLACEHOLDER — SEO to supply';
+$canonicalUrl = 'https://fortenergy.co.uk/commercial/';
+$schemaJson   = json_encode([
+    '@context'        => 'https://schema.org',
+    '@type'           => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home',                    'item' => 'https://fortenergy.co.uk'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Commercial & Industrial',  'item' => 'https://fortenergy.co.uk/commercial'],
+    ],
+]);
+
 ob_start();
 ?>
 

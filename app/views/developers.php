@@ -1,6 +1,17 @@
 <?php
 $pageTitle = 'Developers & Housebuilders - Fort Energy';
-$pageCss = 'Developers';
+$activePage   = 'developers';
+$metaDesc     = 'PLACEHOLDER — SEO to supply';
+$canonicalUrl = 'https://fortenergy.co.uk/developers';
+$pageCss      = 'Developers';
+$schemaJson   = json_encode([
+    '@context'        => 'https://schema.org',
+    '@type'           => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home',                        'item' => 'https://fortenergy.co.uk'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Developers & Housebuilders',  'item' => 'https://fortenergy.co.uk/developers'],
+    ],
+]);
 ob_start();
 ?>
 

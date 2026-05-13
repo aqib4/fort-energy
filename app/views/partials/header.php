@@ -43,11 +43,11 @@ $pageCSS      = $pageCSS      ?? null;
 $schemaJson   = $schemaJson   ?? null;
 
 $navItems = [
-  'commercial'   => ['label' => 'Commercial',   'href' => '/commercial'],
-  'developers'   => ['label' => 'Developers',   'href' => '/developers'],
-  'residential'  => ['label' => 'Residential',  'href' => '/residential'],
-  'agricultural' => ['label' => 'Agricultural', 'href' => '/agricultural'],
-  'bipv'         => ['label' => 'BIPV',          'href' => '/bipv'],
+  'commercial'   => ['label' => 'Commercial',   'href' => BASE_URL . 'commercial'],
+  'developers'   => ['label' => 'Developers',   'href' => BASE_URL . 'developers'],
+  'residential'  => ['label' => 'Residential',  'href' => BASE_URL . 'residential'],
+  'agricultural' => ['label' => 'Agricultural', 'href' => BASE_URL . 'agricultural'],
+  'bipv'         => ['label' => 'BIPV',         'href' => BASE_URL . 'bipv'],
 ];
 ?>
 <!DOCTYPE html>
@@ -90,16 +90,16 @@ $navItems = [
     rel="stylesheet">
 
   <!-- ── GLOBAL CSS (variables, nav, footer, shared) ── -->
-  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/index.css">
 
   <!-- ── PAGE-SPECIFIC CSS ─────────────────────────── -->
   <?php if ($pageCSS): ?>
-    <link rel="stylesheet" href="/assets/css/<?= htmlspecialchars($pageCSS) ?>">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/<?= htmlspecialchars($pageCSS) ?>">
   <?php endif; ?>
 
   <!-- ── FAVICON ───────────────────────────────────── -->
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="<?= BASE_URL ?>assets/img/favicon.svg">
+  <link rel="icon" type="image/png" href="<?= BASE_URL ?>assets/img/favicon.png">
 
   <!-- ── ORGANISATION SCHEMA (on every page) ───────── -->
   <script type="application/ld+json">
@@ -137,14 +137,8 @@ $navItems = [
 ═══════════════════════════════════════════ -->
   <nav id="nav" role="navigation" aria-label="Main navigation">
 
-    <a href="/" class="nav-logo" aria-label="Fort Energy — home">
-      <div class="nav-logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
-          <path d="M7 1L12 4V10L7 13L2 10V4L7 1Z" stroke="white" stroke-width="1.2" fill="none" />
-          <path d="M7 4L9.5 7L7 10L4.5 7L7 4Z" fill="white" opacity="0.8" />
-        </svg>
-      </div>
-      FORT ENERGY
+    <a href="<?= BASE_URL ?>" class="nav-logo" aria-label="Fort Energy — home">
+      <img src="<?= BASE_URL ?>assets/img/logo-1.png" alt="Fort Energy logo">
     </a>
 
     <ul class="nav-links" id="navLinks" role="list">
@@ -159,7 +153,7 @@ $navItems = [
         </li>
       <?php endforeach; ?>
       <li role="listitem">
-        <a href="/contact"
+        <a href="<?= BASE_URL ?>contact"
           class="nav-cta<?= $activePage === 'contact' ? ' active' : '' ?>"
           <?= $activePage === 'contact' ? 'aria-current="page"' : '' ?>>
           Get a Quote

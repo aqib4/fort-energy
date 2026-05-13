@@ -1,6 +1,21 @@
 <?php
-$pageTitle = 'Commercial Specialist Services - Fort Energy';
+
+
+
 $pageCss = 'commercial-specialist';
+$activePage   = 'commercial';
+$pageTitle    = 'Commercial Specialist Services - Fort Energy';
+$metaDesc     = 'PLACEHOLDER — SEO to supply';
+$canonicalUrl = 'https://fortenergy.co.uk/commercial';
+$schemaJson   = json_encode([
+    '@context'        => 'https://schema.org',
+    '@type'           => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home',                  'item' => 'https://fortenergy.co.uk'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Commercial & Industrial', 'item' => 'https://fortenergy.co.uk/commercial'],
+    ],
+]);
+
 ob_start();
 ?>
 <!-- BREADCRUMB -->
@@ -24,7 +39,7 @@ ob_start();
         </div>
     </div>
 
-    <!-- Hero diagram: specialist site types infographic -->
+    <!-- Hero diagram: specialist  site types infographic -->
     <div class="hero-diagram">
         <svg width="320" height="420" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>

@@ -1,7 +1,18 @@
 <?php
 $pageTitle = 'Residential Systems - Fort Energy';
+$activePage   = 'residential';
+$metaDesc     = 'PLACEHOLDER — SEO to supply';
+$canonicalUrl = 'https://fortenergy.co.uk/residential';
+$pageCss      = 'residentials';
+$schemaJson   = json_encode([
+    '@context'        => 'https://schema.org',
+    '@type'           => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home',                'item' => 'https://fortenergy.co.uk'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Residential Systems', 'item' => 'https://fortenergy.co.uk/residential'],
+    ],
+]);
 ob_start();
-$pageCss = 'residentials';
 ?>
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
