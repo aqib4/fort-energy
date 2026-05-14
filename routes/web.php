@@ -12,3 +12,4 @@ $router->get('/residential/custom', 'custom_residential.php');
 $router->get('/agricultural', 'agricultural.php');
 $router->get('/bipv', 'bipv.php');
 $router->get('/contact', 'contact.php');
+$router->get('/privacy', 'privacy.php');

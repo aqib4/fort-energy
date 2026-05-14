@@ -35,5 +35,6 @@
 </footer>
 <div class="footer-bottom">
   <span class="footer-copy">© <?php echo date('Y'); ?> Fort Energy Ltd. All rights reserved.</span>
+  <span class="footer-copy"><a href="<?= BASE_URL ?>privacy" style="color: inherit; text-decoration: none;">Privacy Policy</a></span>
   <span class="footer-copy">Registered in England &amp; Wales</span>
 </div>

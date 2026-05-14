@@ -177,8 +177,8 @@
   .nav-links.open { display:flex; flex-direction:column; position:fixed; top:64px; left:0; right:0; background:var(--paper); padding:20px 24px; gap:16px; border-bottom:1px solid var(--rule); z-index:99; }
   .nav-burger { display:flex; }
 
-  .hero { grid-template-columns:1fr; padding:32px 32px 0; gap:0; }
-  .hero-left { padding-bottom:48px; }
+  .hero { grid-template-columns:1fr; padding: 0; gap:0; }
+  .hero-left { padding-bottom:70px 0px; }
   .hero-diagram { min-height:320px; }
   .constraints { padding:60px 32px; }
   .constraints-grid { grid-template-columns:1fr 1fr; }

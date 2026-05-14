@@ -50,15 +50,13 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 40px;
-  height: 80px;
+  height: 64px;
   background: rgba(225, 222, 204, 0.92); /* background-color */
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--rule);
 }
-.nav-logo img{
-  width: 160px;
-  height: 80px;
-  object-fit: contain;
+.nav-logo img {
+  height: 40px; width: auto;
 }
 
 .nav-links {
@@ -66,7 +64,7 @@ nav {
   list-style: none;
 }
 .nav-links a {
-  font-size: 18px; font-weight: 600; letter-spacing: 0.04em;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
   color: var(--text-color); text-decoration: none;
   transition: color 0.2s;
 }
@@ -77,19 +75,19 @@ nav {
 }
 .nav-dropdown {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1px);
   left: 0;
   background: var(--background-color);
   list-style: none;
-  min-width: 220px;
+  min-width: 240px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 10px 0;
+  padding: 8px 0;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
+  transform: translateY(8px);
   transition: all 0.2s ease;
   z-index: 101;
   border: 1px solid var(--rule);
@@ -105,16 +103,30 @@ nav {
 .nav-dropdown li a {
   display: block;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 500;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
 }
 .nav-dropdown li a:hover {
-  background: rgba(10, 107, 82, 0.05);
+  background: rgba(10,107,82,0.05);
+  color: var(--teal);
+}
+.dropdown-sep {
+  height: 1px;
+  background: var(--rule);
+  margin: 8px 0;
+}
+.dropdown-arrow {
+  font-size: 8px;
+  vertical-align: middle;
+  margin-left: 4px;
+  opacity: 0.5;
 }
 
 .nav-cta {
   background: var(--accent-color); color: var(--background-color) !important;
-  padding: 8px 18px; font-size: 17px !important;
+  padding: 8px 18px; font-size: 12px !important;
   letter-spacing: 0.08em !important;
   transition: background 0.2s !important;
   border-radius: 4px;
@@ -122,6 +134,18 @@ nav {
 .nav-cta:hover { background: var(--secondary-color) !important; color: var(--primary-color) !important; }
 .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
 .nav-burger span { display: block; width: 24px; height: 2px; background: var(--secondary-color); transition: all 0.3s; }
+
+/* ── BREADCRUMB (Global — Older Version) ── */
+.breadcrumb {
+  padding: 88px 56px 24px !important;
+  background: var(--white) !important;
+  display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid var(--rule) !important;
+}
+.bc-item { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-low) !important; text-decoration: none; transition: color 0.2s; }
+.bc-item:hover { color: var(--teal) !important; }
+.bc-sep { font-family: var(--mono); font-size: 11px; color: var(--rule) !important; }
+.bc-current { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--teal) !important; }
 
 /* ── FOOTER ──────────────────────────────────────────────── */
 footer {
@@ -162,9 +186,12 @@ footer {
   .footer-bottom { padding: 20px 32px; flex-direction: column; gap: 8px; text-align: center; }
   nav { padding: 0 24px; }
   .nav-links { display: none; }
-  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 80px; left: 0; right: 0; background: var(--background-color); padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--rule); z-index: 99; }
+  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; background: var(--background-color); padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--rule); z-index: 99; }
   .nav-burger { display: flex; }
   
+  /* Responsive Breadcrumb Padding */
+  .breadcrumb { padding: 88px 32px 0 !important; }
+
   .nav-dropdown {
     position: static;
     box-shadow: none;
@@ -185,9 +212,12 @@ footer {
 @media (max-width: 640px) {
   footer { grid-template-columns: 1fr; padding: 40px 20px; }
   nav { padding: 0 20px; }
+  .breadcrumb { padding: 80px 20px 0 !important; }
+
   /* ── 15px text on mobile ── */
+
   :root { --fs-text: 15px; }
   .btn-primary, .btn-secondary, .btn-primary-dark, .btn-outline-dark,
   .tier-cta, .closing-cta, .lifecycle-cta, .training-cta, .proc-cta,
-  .nav-cta { font-size: var(--fs-btn) !important; }
+  .nav-cta { font-size: 14px !important; }
 }

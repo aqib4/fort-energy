@@ -17,14 +17,7 @@ ob_start();
 ?>
 
 
-<!-- BREADCRUMB -->
-<nav aria-label="Breadcrumb" class="breadcrumb">
-    <a href="/" class="bc-item">Home</a>
-    <span class="bc-sep" aria-hidden="true">/</span>
-    <a href="/residential" class="bc-item">Residential Systems</a>
-    <span class="bc-sep" aria-hidden="true">/</span>
-    <span class="bc-current" aria-current="page">Solar reroof</span>
-</nav>
+
 
 <!-- HERO -->
 <section class="hero">

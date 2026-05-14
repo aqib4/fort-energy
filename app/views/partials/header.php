@@ -142,21 +142,48 @@ $navItems = [
     </a>
 
     <ul class="nav-links" id="navLinks" role="list">
-      <?php foreach ($navItems as $slug => $item): ?>
-        <li role="listitem">
-          <a href="<?= $item['href'] ?>"
-            <?php if ($activePage === $slug): ?>
-            class="active" aria-current="page"
-            <?php endif; ?>>
-            <?= $item['label'] ?>
-          </a>
-        </li>
-      <?php endforeach; ?>
+      <li role="listitem" class="nav-item-dropdown">
+        <a href="<?= BASE_URL ?>commercial" <?php if ($activePage === 'commercial'): ?>class="active"<?php endif; ?>>
+          Commercial &amp; Industrial <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="nav-dropdown">
+          <li><a href="<?= BASE_URL ?>commercial/specialist">Specialist Services</a></li>
+        </ul>
+      </li>
+
+      <li role="listitem">
+        <a href="<?= BASE_URL ?>developers" <?php if ($activePage === 'developers'): ?>class="active"<?php endif; ?>>
+          Developers
+        </a>
+      </li>
+
+      <li role="listitem" class="nav-item-dropdown">
+        <a href="<?= BASE_URL ?>residential" <?php if ($activePage === 'residential'): ?>class="active"<?php endif; ?>>
+          Residential Systems <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="nav-dropdown">
+          <li><a href="<?= BASE_URL ?>residential/solar-reroof">Solar Reroof</a></li>
+          <li><a href="<?= BASE_URL ?>residential/custom">Custom Residential</a></li>
+        </ul>
+      </li>
+
+      <li role="listitem">
+        <a href="<?= BASE_URL ?>agricultural" <?php if ($activePage === 'agricultural'): ?>class="active"<?php endif; ?>>
+          Agricultural
+        </a>
+      </li>
+
+      <li role="listitem">
+        <a href="<?= BASE_URL ?>bipv" <?php if ($activePage === 'bipv'): ?>class="active"<?php endif; ?>>
+          BIPV
+        </a>
+      </li>
+
       <li role="listitem">
         <a href="<?= BASE_URL ?>contact"
           class="nav-cta<?= $activePage === 'contact' ? ' active' : '' ?>"
           <?= $activePage === 'contact' ? 'aria-current="page"' : '' ?>>
-          Get a Quote
+          Contact &amp; Case Studies
         </a>
       </li>
     </ul>

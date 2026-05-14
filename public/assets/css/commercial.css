@@ -381,4 +381,8 @@
   .cs-metrics-strip { grid-template-columns: 1fr; }
   .csm { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .csm:last-child { border-bottom: none; }
+  .csm:not(:first-child) { padding-left: 0px; padding-right: 0px; }
+  .sc-link { font-size: 14px !important;letter-spacing: 1px !important; }
+
+  .btn-primary, .btn-secondary, .btn-primary-dark, .btn-outline-dark, .tier-cta, .closing-cta, .lifecycle-cta, .training-cta, .proc-cta, .nav-cta { font-size: 14px !important; }
 }

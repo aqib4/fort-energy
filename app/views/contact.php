@@ -10,12 +10,7 @@ ob_start();
 ?>
 
 
-<!-- BREADCRUMB -->
-<nav aria-label="Breadcrumb" class="breadcrumb">
-    <a href="/" class="bc-item">Home</a>
-    <span class="bc-sep" aria-hidden="true">/</span>
-    <span class="bc-current" aria-current="page">Contact &amp; Case Studies</span>
-</nav>
+
 
 <!-- HERO -->
 <section class="hero">
@@ -25,39 +20,41 @@ ob_start();
         <p class="hero-sub">Whether you are scoping a commercial site, designing a development's energy strategy, or specifying BIPV for an architectural project — start here. We respond to all enquiries within one working day.</p>
     </div>
     <div class="hero-right">
-        <div class="contact-info-row">
-            <span class="ci-label">Email</span>
-            <div>
-                <div class="ci-value"><a href="mailto:info@fortenergy.co.uk">info@fortenergy.co.uk</a></div>
-                <div class="ci-sub">All enquiries — responses within 1 working day</div>
+        <div class="hero-contact-chips">
+            <div class="contact-info-row">
+                <span class="ci-label">Email</span>
+                <div>
+                    <div class="ci-value"><a href="mailto:info@fortenergy.co.uk">info@fortenergy.co.uk</a></div>
+                    <div class="ci-sub">All enquiries — responses within 1 working day</div>
+                </div>
             </div>
-        </div>
-        <div class="contact-info-row">
-            <span class="ci-label">Phone</span>
-            <div>
-                <div class="ci-value"><a href="tel:+441234567890">01234 567 890</a></div>
-                <div class="ci-sub">Mon–Fri, 8am–6pm</div>
+            <div class="contact-info-row">
+                <span class="ci-label">Phone</span>
+                <div>
+                    <div class="ci-value"><a href="tel:+441234567890">01234 567 890</a></div>
+                    <div class="ci-sub">Mon–Fri, 8am–6pm</div>
+                </div>
             </div>
-        </div>
-        <div class="contact-info-row">
-            <span class="ci-label">Service area</span>
-            <div>
-                <div class="ci-value">United Kingdom</div>
-                <div class="ci-sub">Commercial, residential, agricultural and BIPV across England and Wales</div>
+            <div class="contact-info-row">
+                <span class="ci-label">Service area</span>
+                <div>
+                    <div class="ci-value">United Kingdom</div>
+                    <div class="ci-sub">Commercial, residential, agricultural and BIPV across England and Wales</div>
+                </div>
             </div>
-        </div>
-        <div class="contact-info-row">
-            <span class="ci-label">Registered</span>
-            <div>
-                <div class="ci-value">Fort Energy Ltd</div>
-                <div class="ci-sub">Registered in England &amp; Wales</div>
+            <div class="contact-info-row">
+                <span class="ci-label">Registered</span>
+                <div>
+                    <div class="ci-value">Fort Energy Ltd</div>
+                    <div class="ci-sub">Registered in England &amp; Wales</div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- MAIN: Form + Case Studies -->
-<div class="main-content">
+<div class="main-content-contact">
 
     <!-- TWO-STEP FORM -->
     <div class="form-panel reveal">
