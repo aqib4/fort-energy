@@ -30,6 +30,9 @@
   --mono: 'DM Mono', monospace;
   --display: 'Fraunces', serif;
   --sans: 'Syne', sans-serif;
+  /* ── GLOBAL FONT SIZE TOKENS ── */
+  --fs-text: 16px;
+  --fs-btn:  17px;
 }
 
 html { scroll-behavior: smooth; }
@@ -129,17 +132,17 @@ footer {
   gap: 48px;
 }
 .footer-brand-name {
-  font-family: var(--font-heading); font-weight: 800; font-size: 17px;
+  font-family: var(--font-heading); font-weight: 800; font-size: var(--fs-text);
   letter-spacing: 0.06em; color: var(--background-color); margin-bottom: 12px;
   display: flex; align-items: center; gap: 10px;
 }
-.footer-brand-desc { font-size: 17px; color: rgba(225, 222, 204, 0.6); line-height: 1.7; max-width: 240px; }
+.footer-brand-desc { font-size: var(--fs-text); color: rgba(225, 222, 204, 0.6); line-height: 1.7; max-width: 240px; }
 .footer-col-title {
-  font-family: var(--font-mono); font-size: 17px; letter-spacing: 0.12em;
+  font-family: var(--font-mono); font-size: var(--fs-text); letter-spacing: 0.12em;
   color: var(--primary-color); text-transform: uppercase; margin-bottom: 16px;
 }
 .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; padding:0; }
-.footer-links a { font-size: 17px; color: rgba(225, 222, 204, 0.6); text-decoration: none; transition: color 0.2s; }
+.footer-links a { font-size: var(--fs-text); color: rgba(225, 222, 204, 0.6); text-decoration: none; transition: color 0.2s; }
 .footer-links a:hover { color: var(--background-color); }
 .footer-bottom {
   background: rgba(0,0,0,0.2);
@@ -147,7 +150,12 @@ footer {
   display: flex; justify-content: space-between; align-items: center;
   border-top: 1px solid rgba(225, 222, 204, 0.1);
 }
-.footer-copy { font-family: var(--font-mono); font-size: 17px; color: black}
+.footer-copy { font-family: var(--font-mono); font-size: var(--fs-text); color: black}
+
+/* ── GLOBAL BUTTON SIZE (17px on all pages) ── */
+.btn-primary, .btn-secondary, .btn-primary-dark, .btn-outline-dark,
+.tier-cta, .closing-cta, .lifecycle-cta, .training-cta, .proc-cta,
+.nav-cta { font-size: var(--fs-btn) !important; }
 
 @media (max-width: 1024px) {
   footer { grid-template-columns: 1fr 1fr; padding: 48px 32px; gap: 36px; }
@@ -177,4 +185,9 @@ footer {
 @media (max-width: 640px) {
   footer { grid-template-columns: 1fr; padding: 40px 20px; }
   nav { padding: 0 20px; }
+  /* ── 15px text on mobile ── */
+  :root { --fs-text: 15px; }
+  .btn-primary, .btn-secondary, .btn-primary-dark, .btn-outline-dark,
+  .tier-cta, .closing-cta, .lifecycle-cta, .training-cta, .proc-cta,
+  .nav-cta { font-size: var(--fs-btn) !important; }
 }

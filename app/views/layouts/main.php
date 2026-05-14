@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/index.css">
-    <?php if (isset($pageCss)): ?>
+    <?php if (!empty($pageCSS)): ?>
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/<?= htmlspecialchars($pageCSS) ?>">
+    <?php elseif (!empty($pageCss)): ?>
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/<?= htmlspecialchars($pageCss) ?>.css">
     <?php endif; ?>
 </head>
