@@ -17,7 +17,14 @@ ob_start();
 ?>
 
 
-
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+    <a href="<?= BASE_URL ?>" class="bc-item">Home</a>
+    <span class="bc-sep">/</span>
+    <a href="<?= BASE_URL ?>residential" class="bc-item">Residential systems</a>
+    <span class="bc-sep">/</span>
+    <span class="bc-current">Solar reroof</span>
+</div>
 
 <!-- HERO -->
 <section class="hero">

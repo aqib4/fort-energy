@@ -147,7 +147,9 @@
 }
 @media (max-width:640px) {
 
-  .hero { padding:20px 20px 0; }
+
+    .hero-left { padding: 48px 20px; }
+    .hero{padding: 0px;}
   .intro { padding:48px 20px; }
   .products { padding:48px 20px; }
   .products-grid { grid-template-columns:1fr; }

@@ -31,6 +31,7 @@
 }
 .hero-h1 em { font-style: italic; color: var(--teal); }
 .hero-sub {
+
   font-size: 18px; font-weight: 400;
   color: var(--ink-mid); line-height: 1.7;
   max-width: 420px;
@@ -420,7 +421,7 @@
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 60px 32px; }
-  .hero-right { min-height: 400px; }
+  .hero-right { min-height: 550px; }
   .sectors { padding: 72px 32px; }
   .sectors-grid { grid-template-columns: 1fr 1fr; }
   .sectors-row2 { grid-template-columns: 1fr 1fr; max-width: 100%; }
@@ -455,4 +456,5 @@
   .cs-metrics { grid-template-columns: 1fr; }
   .cs-metric { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .cs-metric:last-child { border-bottom: none; }
+ .cs-image-slot {height: 340px;}
 }

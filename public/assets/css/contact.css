@@ -2,6 +2,17 @@ html { scroll-behavior: smooth; }
 body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.5; overflow-x: hidden; }
 
 
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  padding-top: 88px; padding-bottom: 0;
+  padding-left: 56px; padding-right: 56px;
+  display: flex; align-items: center; gap: 8px;
+}
+.bc-item { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--ink-low); text-decoration: none; transition: color 0.2s; }
+.bc-item:hover { color: var(--teal); }
+.bc-sep { font-family: var(--mono); font-size: var(--fs-text); color: var(--rule); }
+.bc-current { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--teal); }
+
 /* ── HERO ── */
 .hero {
   padding-top: 64px;
@@ -244,7 +255,8 @@ body { font-family: var(--sans); background: var(--paper); color: var(--ink); li
   .field-row { grid-template-columns:1fr; }
 }
 @media (max-width:640px) {
-  .hero { padding:80px 20px 40px; }
+  .hero-left { padding: 48px 20px; }
+  .hero{padding: 0px;}
   .main-content-contact { padding:48px 20px; }
   .sector-grid { grid-template-columns:1fr; }
   .cs-flow { grid-template-columns:1fr; }

@@ -183,7 +183,7 @@ $navItems = [
         <a href="<?= BASE_URL ?>contact"
           class="nav-cta<?= $activePage === 'contact' ? ' active' : '' ?>"
           <?= $activePage === 'contact' ? 'aria-current="page"' : '' ?>>
-          Contact &amp; Case Studies
+          Contact
         </a>
       </li>
     </ul>

@@ -287,3 +287,8 @@
   .back-strip { padding: 16px 20px; flex-wrap: wrap; }
   
 }
+
+@media (max-width: 640px) {
+    .hero-left { padding: 48px 20px; }
+    .hero{padding: 0px;}
+}

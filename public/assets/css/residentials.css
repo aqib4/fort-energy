@@ -264,3 +264,9 @@ body { font-family: var(--sans); background: var(--paper); color: var(--ink); li
   .csm { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .csm:last-child { border-bottom: none; }
 }
+
+
+@media (max-width: 640px) {
+    .hero-left { padding: 48px 20px; }
+    .hero{padding: 0px;}
+}

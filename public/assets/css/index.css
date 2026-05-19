@@ -157,13 +157,13 @@ footer {
 }
 .footer-brand-name {
   font-family: var(--font-heading); font-weight: 800; font-size: var(--fs-text);
-  letter-spacing: 0.06em; color: var(--background-color); margin-bottom: 12px;
+  letter-spacing: 0.06em; color: white; margin-bottom: 12px;
   display: flex; align-items: center; gap: 10px;
 }
 .footer-brand-desc { font-size: var(--fs-text); color: rgba(225, 222, 204, 0.6); line-height: 1.7; max-width: 240px; }
 .footer-col-title {
   font-family: var(--font-mono); font-size: var(--fs-text); letter-spacing: 0.12em;
-  color: var(--primary-color); text-transform: uppercase; margin-bottom: 16px;
+  color: white; text-transform: uppercase; margin-bottom: 16px;
 }
 .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; padding:0; }
 .footer-links a { font-size: var(--fs-text); color: rgba(225, 222, 204, 0.6); text-decoration: none; transition: color 0.2s; }

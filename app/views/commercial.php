@@ -16,6 +16,14 @@ $schemaJson   = json_encode([
 ob_start();
 ?>
 
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+    <a href="<?= BASE_URL ?>" class="bc-item">Home</a>
+    <span class="bc-sep">/</span>
+    <a href="<?= BASE_URL ?>commercial" class="bc-item">Commercial &amp; Industrial</a>
+</div>
+
 <!-- HERO -->
 <section class="hero">
     <div class="hero-left">

@@ -1,7 +1,15 @@
- 
-/* ── BREADCRUMB ── */
 
- 
+/* breadcrumb */
+.breadcrumb {
+  padding-top: 88px; padding-bottom: 0;
+  padding-left: 56px; padding-right: 56px;
+  display: flex; align-items: center; gap: 8px;
+}
+.bc-item { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--ink-low); text-decoration: none; transition: color 0.2s; }
+.bc-item:hover { color: var(--teal); }
+.bc-sep { font-family: var(--mono); font-size: var(--fs-text); color: var(--rule); }
+.bc-current { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--teal); }
+
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
@@ -185,4 +193,10 @@
   .metrics-band { padding:40px 20px; }
   .proof { padding:48px 20px; }
   .cta-band { padding:48px 20px; }
+}
+
+
+@media (max-width: 640px) {
+    .hero-left { padding: 48px 20px; }
+    .hero{padding: 0px;}
 }
