@@ -312,7 +312,7 @@ ob_start();
         <!-- EV Charging -->
         <div class="int-card reveal">
             <div class="int-img">
-                <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=700&q=80&fit=crop" alt="EV charger integrated with home solar system" loading="lazy" />
+                <img src="<?= BASE_URL ?>/assets/img/residential/5.png" alt="EV charger integrated with home solar system" loading="lazy" />
                 <div class="int-img-overlay"></div>
                 <span class="int-img-ref">INT-01</span>
             </div>
@@ -330,7 +330,7 @@ ob_start();
         <!-- MVHR -->
         <div class="int-card reveal rd1">
             <div class="int-img">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="MVHR mechanical ventilation heat recovery unit installation" loading="lazy" />
+                <img src="<?= BASE_URL ?>/assets/img/residential/6.png" alt="MVHR mechanical ventilation heat recovery unit installation" loading="lazy" />
                 <div class="int-img-overlay"></div>
                 <span class="int-img-ref">INT-02</span>
             </div>
@@ -348,7 +348,7 @@ ob_start();
         <!-- Hot water -->
         <div class="int-card reveal rd2">
             <div class="int-img">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80&fit=crop" alt="Hot water cylinder and plumbing in plant room" loading="lazy" />
+                <img src="<?= BASE_URL ?>/assets/img/residential/1.png" alt="Hot water cylinder and plumbing in plant room" loading="lazy" />
                 <div class="int-img-overlay"></div>
                 <span class="int-img-ref">INT-03</span>
             </div>

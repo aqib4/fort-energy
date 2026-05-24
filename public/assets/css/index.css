@@ -135,17 +135,6 @@ nav {
 .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
 .nav-burger span { display: block; width: 24px; height: 2px; background: var(--secondary-color); transition: all 0.3s; }
 
-/* ── BREADCRUMB (Global — Older Version) ── */
-.breadcrumb {
-  padding: 88px 56px 24px !important;
-  background: var(--white) !important;
-  display: flex; align-items: center; gap: 8px;
-  border-bottom: 1px solid var(--rule) !important;
-}
-.bc-item { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-low) !important; text-decoration: none; transition: color 0.2s; }
-.bc-item:hover { color: var(--teal) !important; }
-.bc-sep { font-family: var(--mono); font-size: 11px; color: var(--rule) !important; }
-.bc-current { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--teal) !important; }
 
 /* ── FOOTER ──────────────────────────────────────────────── */
 footer {
@@ -189,9 +178,7 @@ footer {
   .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; background: var(--background-color); padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--rule); z-index: 99; }
   .nav-burger { display: flex; }
   
-  /* Responsive Breadcrumb Padding */
-  .breadcrumb { padding: 88px 32px 0 !important; }
-
+  
   .nav-dropdown {
     position: static;
     box-shadow: none;
@@ -212,8 +199,7 @@ footer {
 @media (max-width: 640px) {
   footer { grid-template-columns: 1fr; padding: 40px 20px; }
   nav { padding: 0 20px; }
-  .breadcrumb { padding: 80px 20px 0 !important; }
-
+  
   /* ── 15px text on mobile ── */
 
   :root { --fs-text: 15px; }

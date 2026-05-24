@@ -191,7 +191,7 @@ ob_start();
         <!-- 1: Power quality -->
         <div class="svc-card reveal">
             <div class="svc-img">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Power quality analysis equipment and oscilloscope" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial-specialist/1.png" alt="Power quality analysis equipment and oscilloscope" loading="lazy" />
                 <div class="svc-img-overlay"></div>
                 <span class="svc-img-ref">SS-01</span>
             </div>
@@ -210,7 +210,7 @@ ob_start();
         <!-- 2: Off-grid -->
         <div class="svc-card reveal reveal-d1">
             <div class="svc-img">
-                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=700&q=80&fit=crop" alt="Off-grid solar installation in remote location" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial-specialist/off_grid.png" alt="Off-grid solar installation in remote location" loading="lazy" />
                 <div class="svc-img-overlay"></div>
                 <span class="svc-img-ref">SS-02</span>
             </div>
@@ -229,7 +229,7 @@ ob_start();
         <!-- 3: Temporary site supplies -->
         <div class="svc-card reveal reveal-d2">
             <div class="svc-img">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80&fit=crop" alt="Temporary power supply on construction site" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial-specialist/4.png" alt="Temporary power supply on construction site" loading="lazy" />
                 <div class="svc-img-overlay"></div>
                 <span class="svc-img-ref">SS-03</span>
             </div>
@@ -253,7 +253,7 @@ ob_start();
         <!-- 4: Harsh environment -->
         <div class="svc-card reveal">
             <div class="svc-img">
-                <img src="https://images.unsplash.com/photo-1605732562742-3023a888e56e?w=700&q=80&fit=crop" alt="Industrial equipment in harsh outdoor environment" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial-specialist/6.png" alt="Industrial equipment in harsh outdoor environment" loading="lazy" />
                 <div class="svc-img-overlay"></div>
                 <span class="svc-img-ref">SS-04</span>
             </div>
@@ -272,7 +272,7 @@ ob_start();
         <!-- 5: Control panels -->
         <div class="svc-card reveal reveal-d1">
             <div class="svc-img">
-                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=700&q=80&fit=crop" alt="Custom electrical control panel design and build" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial-specialist/5.png" alt="Custom electrical control panel design and build" loading="lazy" />
                 <div class="svc-img-overlay"></div>
                 <span class="svc-img-ref">SS-05</span>
             </div>
@@ -356,12 +356,7 @@ ob_start();
     </div>
 </section>
 
-<!-- BACK TO COMMERCIAL STRIP -->
-<div class="back-strip">
-    <a href="<?= BASE_URL ?>commercial" class="back-link">← Commercial &amp; Industrial</a>
-    <span class="back-sep">|</span>
-    <span class="back-text">Also in commercial: Solar PV · BESS · Load balancing · Hybrid microgrids · Standby generation · PLC &amp; BMS control</span>
-</div>
+
 
 
 <script>

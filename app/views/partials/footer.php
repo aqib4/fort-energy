@@ -29,7 +29,7 @@
     <ul class="footer-links">
       <li><a href="<?= BASE_URL ?>contact">Get a quote</a></li>
       <li><a href="<?= BASE_URL ?>contact">Book a technical call</a></li>
-      <li><a href="mailto:info@fortenergy.co.uk">info@fortenergy.co.uk</a></li>
+      <li><a href="mailto:<?= CONTACT_EMAIL ?>"><?= CONTACT_EMAIL ?></a></li>
     </ul>
   </div>
 </footer>

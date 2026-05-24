@@ -195,7 +195,7 @@ ob_start();
         <!-- In-roof -->
         <div class="product-card reveal">
             <div class="prod-img">
-                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80&fit=crop" alt="In-roof BIPV solar tiles integrated into building roofline" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/bipv/1.png" alt="In-roof BIPV solar tiles integrated into building roofline" loading="lazy" />
                 <div class="prod-img-overlay"></div>
                 <span class="prod-img-ref">PT-01</span>
             </div>
@@ -214,7 +214,7 @@ ob_start();
         <!-- Cladding & facades -->
         <div class="product-card reveal rd1">
             <div class="prod-img">
-                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80&fit=crop" alt="BIPV solar cladding panels integrated into commercial building facade" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/bipv/4.png" alt="BIPV solar cladding panels integrated into commercial building facade" loading="lazy" />
                 <div class="prod-img-overlay"></div>
                 <span class="prod-img-ref">PT-02</span>
             </div>
@@ -233,7 +233,7 @@ ob_start();
         <!-- Curtain walls & glazing -->
         <div class="product-card reveal">
             <div class="prod-img">
-                <img src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?w=800&q=80&fit=crop" alt="BIPV solar glazing curtain wall on commercial office building" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/bipv/2.png" alt="BIPV solar glazing curtain wall on commercial office building" loading="lazy" />
                 <div class="prod-img-overlay"></div>
                 <span class="prod-img-ref">PT-03</span>
             </div>
@@ -252,7 +252,7 @@ ob_start();
         <!-- Architectural specials -->
         <div class="product-card reveal rd1">
             <div class="prod-img">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop" alt="Bespoke architectural BIPV solar installation on feature building" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/bipv/6.png" alt="Bespoke architectural BIPV solar installation on feature building" loading="lazy" />
                 <div class="prod-img-overlay"></div>
                 <span class="prod-img-ref">PT-04</span>
             </div>

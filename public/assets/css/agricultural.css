@@ -1,14 +1,16 @@
 
-/* breadcrumb */
+/* ── BREADCRUMB ── */
 .breadcrumb {
-  padding-top: 88px; padding-bottom: 0;
+  background-color:black;
+  
+  padding-top: 70px; padding-bottom: 10px;
   padding-left: 56px; padding-right: 56px;
   display: flex; align-items: center; gap: 8px;
 }
-.bc-item { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--ink-low); text-decoration: none; transition: color 0.2s; }
-.bc-item:hover { color: var(--teal); }
-.bc-sep { font-family: var(--mono); font-size: var(--fs-text); color: var(--rule); }
-.bc-current { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--teal); }
+.bc-item { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color: var(--rule); text-decoration: none; transition: color 0.2s; }
+.bc-item:hover { color: var(--rule); }
+.bc-sep { font-family: var(--mono); font-size: var(--fs-text); color:var(--rule); }
+.bc-current { font-family: var(--mono); font-size: var(--fs-text); letter-spacing: 0.08em; color:var(--rule); }
 
 /* ── HERO ── */
 .hero {

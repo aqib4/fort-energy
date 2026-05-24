@@ -13,3 +13,5 @@ $router->get('/agricultural', 'agricultural.php');
 $router->get('/bipv', 'bipv.php');
 $router->get('/contact', 'contact.php');
 $router->get('/privacy', 'privacy.php');
+$router->post('/submit-enquiry', 'submit_enquiry.php');
+

@@ -232,7 +232,7 @@ ob_start();
         <!-- 1: Solar PV -->
         <div class="service-card reveal">
             <div class="service-img">
-                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80&fit=crop" alt="Commercial rooftop solar PV array" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial/solar-pv.png" alt="Commercial rooftop solar PV array" loading="lazy" />
                 <div class="service-img-overlay"></div>
                 <span class="service-img-ref">S-01</span>
             </div>
@@ -250,7 +250,7 @@ ob_start();
         <!-- 2: BESS -->
         <div class="service-card reveal reveal-delay-1">
             <div class="service-img">
-                <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=80&fit=crop" alt="Industrial battery energy storage system" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial/8.png" alt="Industrial battery energy storage system" loading="lazy" />
                 <div class="service-img-overlay"></div>
                 <span class="service-img-ref">S-02</span>
             </div>
@@ -268,7 +268,7 @@ ob_start();
         <!-- 3: Load balancing / PFC -->
         <div class="service-card reveal reveal-delay-2">
             <div class="service-img">
-                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop" alt="Electrical switchgear and power factor correction" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial/load_balancing.png" alt="Electrical switchgear and power factor correction" loading="lazy" />
                 <div class="service-img-overlay"></div>
                 <span class="service-img-ref">S-03</span>
             </div>
@@ -286,7 +286,7 @@ ob_start();
         <!-- 4: Hybrid / microgrids -->
         <div class="service-card reveal">
             <div class="service-img">
-                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=80&fit=crop" alt="Ground-mount solar microgrid installation" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial/4.png" alt="Ground-mount solar microgrid installation" loading="lazy" />
                 <div class="service-img-overlay"></div>
                 <span class="service-img-ref">S-04</span>
             </div>
@@ -304,7 +304,7 @@ ob_start();
         <!-- 5: Standby generation -->
         <div class="service-card reveal reveal-delay-1">
             <div class="service-img">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop" alt="Industrial standby generator installation" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial/6.png" alt="Industrial standby generator installation" loading="lazy" />
                 <div class="service-img-overlay"></div>
                 <span class="service-img-ref">S-05</span>
             </div>
@@ -322,7 +322,7 @@ ob_start();
         <!-- 6: PLC / BMS -->
         <div class="service-card reveal reveal-delay-2">
             <div class="service-img">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&fit=crop" alt="PLC and BMS control panel electronics" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/commercial/5.png" alt="PLC and BMS control panel electronics" loading="lazy" />
                 <div class="service-img-overlay"></div>
                 <span class="service-img-ref">S-06</span>
             </div>

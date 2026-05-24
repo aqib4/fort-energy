@@ -113,7 +113,7 @@ $navItems = [
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "email": "info@fortenergy.co.uk",
+        "email": "<?= CONTACT_EMAIL ?>",
         "areaServed": "GB"
       }
     }

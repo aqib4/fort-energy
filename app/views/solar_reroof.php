@@ -172,25 +172,49 @@ ob_start();
         <div class="where-count">04</div>
     </div>
     <div class="where-grid">
-        <div class="where-card">
-            <span class="where-num">01</span>
-            <h3 class="where-title">Properties due for reroofing</h3>
-            <p class="where-desc">If a property needs reroofing within the next five years — aging slates, failing felt, leaking valleys — a solar reroof is worth assessing now. The alternative is spending on a conventional reroof and spending again on solar later. Combining them is almost always more cost-effective.</p>
+        <div class="where-card reveal">
+            <div class="where-img">
+                <img src="<?= BASE_URL ?>assets/img/solar-reroof/6.png" alt="Properties due for reroofing" loading="lazy" />
+                <div class="where-img-overlay"></div>
+                <span class="where-ref">01</span>
+            </div>
+            <div class="where-body">
+                <h3 class="where-title">Properties due for reroofing</h3>
+                <p class="where-desc">If a property needs reroofing within the next five years — aging slates, failing felt, leaking valleys — a solar reroof is worth assessing now. The alternative is spending on a conventional reroof and spending again on solar later. Combining them is almost always more cost-effective.</p>
+            </div>
         </div>
-        <div class="where-card">
-            <span class="where-num">02</span>
-            <h3 class="where-title">Conservation areas and listed building settings</h3>
-            <p class="where-desc">In-roof solar tiles sit flush with the roofline and are available in slate-effect and tile-effect finishes. They are widely accepted in conservation areas where conventional solar panels would not receive planning permission. We advise on planning requirements as part of the initial assessment.</p>
+        <div class="where-card reveal rd1">
+            <div class="where-img">
+                <img src="<?= BASE_URL ?>assets/img/solar-reroof/5.png" alt="Conservation areas and listed building settings" loading="lazy" />
+                <div class="where-img-overlay"></div>
+                <span class="where-ref">02</span>
+            </div>
+            <div class="where-body">
+                <h3 class="where-title">Conservation areas and listed building settings</h3>
+                <p class="where-desc">In-roof solar tiles sit flush with the roofline and are available in slate-effect and tile-effect finishes. They are widely accepted in conservation areas where conventional solar panels would not receive planning permission. We advise on planning requirements as part of the initial assessment.</p>
+            </div>
         </div>
-        <div class="where-card">
-            <span class="where-num">03</span>
-            <h3 class="where-title">Appearance-priority projects</h3>
-            <p class="where-desc">Properties where standard roof-mount solar is visually unacceptable — period properties, architect-designed homes, or owners who prefer a flush finish. In-roof solar achieves identical generation without visible mounting hardware or panel framing above the roofline.</p>
+        <div class="where-card reveal">
+            <div class="where-img">
+                <img src="<?= BASE_URL ?>assets/img/solar-reroof/3.png" alt="Appearance-priority projects" loading="lazy" />
+                <div class="where-img-overlay"></div>
+                <span class="where-ref">03</span>
+            </div>
+            <div class="where-body">
+                <h3 class="where-title">Appearance-priority projects</h3>
+                <p class="where-desc">Properties where standard roof-mount solar is visually unacceptable — period properties, architect-designed homes, or owners who prefer a flush finish. In-roof solar achieves identical generation without visible mounting hardware or panel framing above the roofline.</p>
+            </div>
         </div>
-        <div class="where-card">
-            <span class="where-num">04</span>
-            <h3 class="where-title">Properties with full roof area available</h3>
-            <p class="where-desc">Detached and semi-detached properties with unobstructed roof area across multiple pitches achieve the highest system yields. A four-pitch Victorian property with 10–16 kWp across all elevations generates significantly more than a restricted south-facing roof-mount system.</p>
+        <div class="where-card reveal rd1">
+            <div class="where-img">
+                <img src="<?= BASE_URL ?>assets/img/solar-reroof/4.png" alt="Properties with full roof area available" loading="lazy" />
+                <div class="where-img-overlay"></div>
+                <span class="where-ref">04</span>
+            </div>
+            <div class="where-body">
+                <h3 class="where-title">Properties with full roof area available</h3>
+                <p class="where-desc">Detached and semi-detached properties with unobstructed roof area across multiple pitches achieve the highest system yields. A four-pitch Victorian property with 10–16 kWp across all elevations generates significantly more than a restricted south-facing roof-mount system.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -390,12 +414,7 @@ ob_start();
     </div>
 </section>
 
-<!-- BACK STRIP -->
-<div class="back-strip">
-    <a href="/residential" class="back-link">← Residential systems</a>
-    <span class="back-sep">|</span>
-    <span class="back-text">Also in residential: Custom systems → · Performance tier · EV charging · MVHR · Battery storage</span>
-</div>
+
 
 <script>
     const io = new IntersectionObserver((entries) => {

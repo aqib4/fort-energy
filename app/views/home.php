@@ -182,115 +182,101 @@ ob_start();
   <div class="sectors-grid">
     <!-- Commercial -->
     <a href="<?= BASE_URL ?>commercial" class="sector-card">
-      <div class="sector-top">
-        <div class="sector-icon-wrap">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="6" width="14" height="12" rx="1"/>
-            <path d="M1 6h18M7 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/>
-            <path d="M8 11h4M8 14h4"/>
-          </svg>
+      <div class="sector-img">
+        <img src="<?= BASE_URL ?>assets/img/home/solar-pv.png" alt="Commercial solar PV installation" loading="lazy" />
+        <div class="sector-img-overlay"></div>
+        <span class="sector-img-ref">01</span>
+      </div>
+      <div class="sector-body">
+        <div class="sector-title">Commercial &amp; Industrial</div>
+        <div class="sector-desc">Solar PV arrays, battery storage, load balancing, hybrid microgrids, standby generation and PLC/BMS control for commercial sites.</div>
+        <div class="sector-tags">
+          <span class="sector-tag">SOLAR PV</span>
+          <span class="sector-tag">BESS</span>
+          <span class="sector-tag">MICROGRIDS</span>
+          <span class="sector-tag">PLC/BMS</span>
         </div>
-        <span class="sector-num">01</span>
+        <div class="sector-arrow">Enter sector →</div>
       </div>
-      <div class="sector-title">Commercial &amp; Industrial</div>
-      <div class="sector-desc">Solar PV arrays, battery storage, load balancing, hybrid microgrids, standby generation and PLC/BMS control for commercial sites.</div>
-      <div class="sector-tags">
-        <span class="sector-tag">SOLAR PV</span>
-        <span class="sector-tag">BESS</span>
-        <span class="sector-tag">MICROGRIDS</span>
-        <span class="sector-tag">PLC/BMS</span>
-      </div>
-      <div class="sector-arrow">Enter sector →</div>
     </a>
 
     <!-- Developers -->
     <a href="<?= BASE_URL ?>developers" class="sector-card">
-      <div class="sector-top">
-        <div class="sector-icon-wrap">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 17V7l7-4 7 4v10"/>
-            <rect x="7" y="11" width="6" height="6"/>
-            <path d="M10 11v6"/>
-          </svg>
+      <div class="sector-img">
+        <img src="<?= BASE_URL ?>assets/img/developers/1.png" alt="Developers energy strategy" loading="lazy" />
+        <div class="sector-img-overlay"></div>
+        <span class="sector-img-ref">02</span>
+      </div>
+      <div class="sector-body">
+        <div class="sector-title">Developers &amp; Housebuilders</div>
+        <div class="sector-desc">Energy strategy, plant room design, G99/G100 applications and on-site BIPV installation training for development projects.</div>
+        <div class="sector-tags">
+          <span class="sector-tag">ENERGY STRATEGY</span>
+          <span class="sector-tag">G99/G100</span>
+          <span class="sector-tag">TRAINING</span>
         </div>
-        <span class="sector-num">02</span>
+        <div class="sector-arrow">Enter sector →</div>
       </div>
-      <div class="sector-title">Developers &amp; Housebuilders</div>
-      <div class="sector-desc">Energy strategy, plant room design, G99/G100 applications and on-site BIPV installation training for development projects.</div>
-      <div class="sector-tags">
-        <span class="sector-tag">ENERGY STRATEGY</span>
-        <span class="sector-tag">G99/G100</span>
-        <span class="sector-tag">TRAINING</span>
-      </div>
-      <div class="sector-arrow">Enter sector →</div>
     </a>
 
     <!-- Residential -->
     <a href="<?= BASE_URL ?>residential" class="sector-card">
-      <div class="sector-top">
-        <div class="sector-icon-wrap">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M2 9l8-6 8 6"/>
-            <path d="M4 9v9h12V9"/>
-            <rect x="7" y="13" width="6" height="5"/>
-          </svg>
+      <div class="sector-img">
+        <img src="<?= BASE_URL ?>assets/img/home/6.png" alt="Residential solar system" loading="lazy" />
+        <div class="sector-img-overlay"></div>
+        <span class="sector-img-ref">03</span>
+      </div>
+      <div class="sector-body">
+        <div class="sector-title">Residential Systems</div>
+        <div class="sector-desc">Tier-based solar and storage systems with EV charging, MVHR ventilation and hot water integration for high-performance homes.</div>
+        <div class="sector-tags">
+          <span class="sector-tag">SOLAR + STORAGE</span>
+          <span class="sector-tag">EV CHARGING</span>
+          <span class="sector-tag">MVHR</span>
         </div>
-        <span class="sector-num">03</span>
+        <div class="sector-arrow">Enter sector →</div>
       </div>
-      <div class="sector-title">Residential Systems</div>
-      <div class="sector-desc">Tier-based solar and storage systems with EV charging, MVHR ventilation and hot water integration for high-performance homes.</div>
-      <div class="sector-tags">
-        <span class="sector-tag">SOLAR + STORAGE</span>
-        <span class="sector-tag">EV CHARGING</span>
-        <span class="sector-tag">MVHR</span>
-      </div>
-      <div class="sector-arrow">Enter sector →</div>
     </a>
   </div>
 
   <div class="sectors-row2">
     <!-- Agricultural -->
     <a href="<?= BASE_URL ?>agricultural" class="sector-card">
-      <div class="sector-top">
-        <div class="sector-icon-wrap">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 15c0-4 3-8 7-8s7 4 7 8"/>
-            <path d="M10 7V3M7 9L4 6M13 9l3-3"/>
-            <path d="M1 15h18"/>
-          </svg>
+      <div class="sector-img">
+        <img src="<?= BASE_URL ?>assets/img/agricultural/1.png" alt="Agricultural solar installation" loading="lazy" />
+        <div class="sector-img-overlay"></div>
+        <span class="sector-img-ref">04</span>
+      </div>
+      <div class="sector-body">
+        <div class="sector-title">Agricultural</div>
+        <div class="sector-desc">Roof-mounted and ground-mount solar for working farms. Sized around operational loads, export potential and site constraints.</div>
+        <div class="sector-tags">
+          <span class="sector-tag">ROOF-MOUNT</span>
+          <span class="sector-tag">GROUND-MOUNT</span>
+          <span class="sector-tag">AGRI TARIFFS</span>
         </div>
-        <span class="sector-num">04</span>
+        <div class="sector-arrow">Enter sector →</div>
       </div>
-      <div class="sector-title">Agricultural</div>
-      <div class="sector-desc">Roof-mounted and ground-mount solar for working farms. Sized around operational loads, export potential and site constraints.</div>
-      <div class="sector-tags">
-        <span class="sector-tag">ROOF-MOUNT</span>
-        <span class="sector-tag">GROUND-MOUNT</span>
-        <span class="sector-tag">AGRI TARIFFS</span>
-      </div>
-      <div class="sector-arrow">Enter sector →</div>
     </a>
 
     <!-- BIPV -->
     <a href="<?= BASE_URL ?>bipv" class="sector-card">
-      <div class="sector-top">
-        <div class="sector-icon-wrap">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="2" width="16" height="16" rx="1"/>
-            <path d="M2 7h16M2 12h16M7 2v16M12 2v16"/>
-          </svg>
+      <div class="sector-img">
+        <img src="<?= BASE_URL ?>assets/img/bipv/1.png" alt="Building integrated solar BIPV" loading="lazy" />
+        <div class="sector-img-overlay"></div>
+        <span class="sector-img-ref">05</span>
+      </div>
+      <div class="sector-body">
+        <div class="sector-title">Building Integrated Solar</div>
+        <div class="sector-desc">In-roof systems, cladding and facades, curtain walls and glazing. Specifier-oriented BIPV across product types and building typologies.</div>
+        <div class="sector-tags">
+          <span class="sector-tag">IN-ROOF</span>
+          <span class="sector-tag">FACADES</span>
+          <span class="sector-tag">GLAZING</span>
+          <span class="sector-tag">BIPV</span>
         </div>
-        <span class="sector-num">05</span>
+        <div class="sector-arrow">Enter sector →</div>
       </div>
-      <div class="sector-title">Building Integrated Solar</div>
-      <div class="sector-desc">In-roof systems, cladding and facades, curtain walls and glazing. Specifier-oriented BIPV across product types and building typologies.</div>
-      <div class="sector-tags">
-        <span class="sector-tag">IN-ROOF</span>
-        <span class="sector-tag">FACADES</span>
-        <span class="sector-tag">GLAZING</span>
-        <span class="sector-tag">BIPV</span>
-      </div>
-      <div class="sector-arrow">Enter sector →</div>
     </a>
   </div>
 </section>

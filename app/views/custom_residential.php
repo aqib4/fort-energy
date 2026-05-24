@@ -183,20 +183,19 @@ ob_start();
 
         <div class="cap-card reveal">
             <div class="cap-img">
-                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=700&q=80&fit=crop" alt="Building integrated solar in-roof BIPV system on high specification home" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/4.png" alt="Building integrated solar in-roof BIPV system on high specification home" loading="lazy" />
                 <div class="cap-img-overlay"></div>
                 <span class="cap-ref">C-01</span>
             </div>
             <div class="cap-body">
                 <div class="cap-title">Building integrated solar</div>
                 <div class="cap-desc">In-roof solar tiles, solar curtain walling and facade cladding. Generation integrated into the building envelope — no visible mounting system. Coordinated with architect from design stage.</div>
-                <a href="/bipv" class="cap-link">See BIPV page for full detail →</a>
             </div>
         </div>
 
         <div class="cap-card reveal rd1">
             <div class="cap-img">
-                <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=700&q=80&fit=crop" alt="High capacity battery energy storage system for residential installation" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/7.png" alt="High capacity battery energy storage system for residential installation" loading="lazy" />
                 <div class="cap-img-overlay"></div>
                 <span class="cap-ref">C-02</span>
             </div>
@@ -208,7 +207,7 @@ ob_start();
 
         <div class="cap-card reveal rd2">
             <div class="cap-img">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Plant room design with coordinated building services equipment" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/5.png" alt="Plant room design with coordinated building services equipment" loading="lazy" />
                 <div class="cap-img-overlay"></div>
                 <span class="cap-ref">C-03</span>
             </div>
@@ -225,7 +224,7 @@ ob_start();
 
         <div class="cap-card reveal">
             <div class="cap-img">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80&fit=crop" alt="Heat pump and domestic hot water cylinder in plant room" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/2.png" alt="Heat pump and domestic hot water cylinder in plant room" loading="lazy" />
                 <div class="cap-img-overlay"></div>
                 <span class="cap-ref">C-04</span>
             </div>
@@ -237,7 +236,7 @@ ob_start();
 
         <div class="cap-card reveal rd1">
             <div class="cap-img">
-                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80&fit=crop" alt="High specification residential air conditioning installation" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/8.png" alt="High specification residential air conditioning installation" loading="lazy" />
                 <div class="cap-img-overlay"></div>
                 <span class="cap-ref">C-05</span>
             </div>
@@ -249,7 +248,7 @@ ob_start();
 
         <div class="cap-card reveal rd2">
             <div class="cap-img">
-                <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=700&q=80&fit=crop" alt="Indoor swimming pool with integrated heating and ventilation system" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/3.png" alt="Indoor swimming pool with integrated heating and ventilation system" loading="lazy" />
                 <div class="cap-img-overlay"></div>
                 <span class="cap-ref">C-06</span>
             </div>
@@ -491,12 +490,7 @@ ob_start();
     </div>
 </section>
 
-<!-- BACK STRIP -->
-<div class="back-strip">
-    <a href="/residential" class="back-link">← Residential systems</a>
-    <span class="back-sep">|</span>
-    <span class="back-text">Also in residential: Solar reroof → · Essential, Performance &amp; Premium tiers · EV charging · MVHR · Hot water integration</span>
-</div>
+
 
 <script>
     const io = new IntersectionObserver((entries) => {

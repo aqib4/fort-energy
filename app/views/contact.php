@@ -8,6 +8,7 @@ $schemaJson   = null; // no schema needed on contact page
 ob_start();
 
 ?>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <!-- BREADCRUMB -->
@@ -30,14 +31,14 @@ ob_start();
             <div class="contact-info-row">
                 <span class="ci-label">Email</span>
                 <div>
-                    <div class="ci-value"><a href="mailto:info@fortenergy.co.uk">info@fortenergy.co.uk</a></div>
+                    <div class="ci-value"><a href="mailto:<?= CONTACT_EMAIL ?>"><?= CONTACT_EMAIL ?></a></div>
                     <div class="ci-sub">All enquiries — responses within 1 working day</div>
                 </div>
             </div>
             <div class="contact-info-row">
                 <span class="ci-label">Phone</span>
                 <div>
-                    <div class="ci-value"><a href="tel:+441234567890">01234 567 890</a></div>
+                    <div class="ci-value"><a href="tel:<?= CONTACT_PHONE_TEL ?>"><?= CONTACT_PHONE ?></a></div>
                     <div class="ci-sub">Mon–Fri, 8am–6pm</div>
                 </div>
             </div>
@@ -88,7 +89,7 @@ ob_start();
                 </svg>
             </div>
             <div class="success-title">Enquiry received</div>
-            <p class="success-body">We have received your enquiry and will respond within one working day. If your project is time-sensitive, call us directly on <a href="tel:+441234567890" style="color:var(--teal);">01234 567 890</a>.</p>
+            <p class="success-body">We have received your enquiry and will respond within one working day. If your project is time-sensitive, call us directly on <a href="tel:<?= CONTACT_PHONE_TEL ?>" style="color:var(--teal);"><?= CONTACT_PHONE ?></a>.</p>
         </div>
 
         <form id="enquiryForm" novalidate>
@@ -184,11 +185,16 @@ ob_start();
                     <div class="field full">
                         <label>Plans or documents (optional)</label>
                         <label class="file-upload" for="fileUpload">
-                            <input type="file" id="fileUpload" name="files" multiple accept=".pdf,.dwg,.jpg,.jpeg,.png,.xlsx">
+                            <input type="file" id="fileUpload" name="files[]" multiple accept=".pdf,.dwg,.jpg,.jpeg,.png,.xlsx">
                             <div class="fu-label">Upload plans, drawings or documents</div>
                             <div class="fu-sub" id="fileLabel">PDF, DWG, images — max 10 MB per file</div>
                         </label>
                     </div>
+                    <!-- Google reCAPTCHA Widget -->
+                    <div class="field full" style="margin-top: 20px; display: flex; justify-content: flex-start;">
+                        <div class="g-recaptcha" data-sitekey="<?= RECAPTCHA_SITE_KEY ?>"></div>
+                    </div>
+
                 </div>
 
                 <button type="submit" class="submit-btn" id="submitBtn" style="margin-top:20px;">
@@ -424,14 +430,51 @@ ob_start();
         btn.disabled = true;
         btn.textContent = 'Sending…';
 
-        /* In production: replace with fetch() POST to your PHP handler */
-        /* Simulated delay for demo */
-        await new Promise(r => setTimeout(r, 1200));
+        /* Client-side reCAPTCHA verification */
+        const recaptchaResponse = grecaptcha.getResponse();
+        if (!recaptchaResponse) {
+            alert('Please verify that you are not a robot by checking the reCAPTCHA box.');
+            btn.disabled = false;
+            btn.textContent = 'Submit enquiry →';
+            return;
+        }
 
-        document.getElementById('enquiryForm').style.display = 'none';
-        document.getElementById('formSuccess').classList.add('visible');
-        document.querySelector('.step-indicators').style.display = 'none';
-        document.querySelector('.form-title').textContent = 'Enquiry received';
+        const formData = new FormData(this);
+
+        try {
+            const response = await fetch('<?= BASE_URL ?>submit-enquiry', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const result = await response.json();
+
+            if (result.success) {
+                document.getElementById('enquiryForm').style.display = 'none';
+                document.getElementById('formSuccess').classList.add('visible');
+                document.querySelector('.step-indicators').style.display = 'none';
+                document.querySelector('.form-title').textContent = 'Enquiry received';
+            } else {
+                alert('Error: ' + (result.error || 'There was a problem sending your enquiry. Please try again.'));
+                btn.disabled = false;
+                btn.textContent = 'Submit enquiry →';
+                if (typeof grecaptcha !== 'undefined') {
+                    grecaptcha.reset();
+                }
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('There was a connection issue. Please check your internet connection or call us directly.');
+            btn.disabled = false;
+            btn.textContent = 'Submit enquiry →';
+            if (typeof grecaptcha !== 'undefined') {
+                grecaptcha.reset();
+            }
+        }
     });
 
     /* Scroll reveal */
