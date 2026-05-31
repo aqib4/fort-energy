@@ -1,12 +1,72 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Burger menu
+    // Burger menu and overlay
     const burger = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
     if (burger && navLinks) {
-        burger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
+        burger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navLinks.classList.toggle('open');
+            if (navOverlay) {
+                navOverlay.classList.toggle('active', isOpen);
+            }
+            burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     }
+
+    // Toggle dropdowns on button click
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const parentLi = toggle.closest('.nav-item-dropdown');
+            if (!parentLi) return;
+
+            const isOpen = parentLi.classList.contains('open');
+
+            // Close other dropdowns
+            document.querySelectorAll('.nav-item-dropdown').forEach(li => {
+                if (li !== parentLi) {
+                    li.classList.remove('open');
+                    const btn = li.querySelector('.dropdown-toggle');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Toggle this dropdown
+            parentLi.classList.toggle('open', !isOpen);
+            toggle.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+        });
+    });
+
+    // Close sidebar and dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        // 1. Close sidebar if open and clicked outside
+        if (navLinks && navLinks.classList.contains('open')) {
+            const clickedInsideSidebar = navLinks.contains(e.target);
+            const clickedBurger = burger && burger.contains(e.target);
+            if (!clickedInsideSidebar && !clickedBurger) {
+                navLinks.classList.remove('open');
+                if (navOverlay) {
+                    navOverlay.classList.remove('active');
+                }
+                if (burger) {
+                    burger.setAttribute('aria-expanded', 'false');
+                }
+            }
+        }
+
+        // 2. Close dropdowns if clicked outside any dropdown
+        const clickedInsideDropdown = e.target.closest('.nav-item-dropdown');
+        if (!clickedInsideDropdown) {
+            document.querySelectorAll('.nav-item-dropdown').forEach(li => {
+                li.classList.remove('open');
+                const btn = li.querySelector('.dropdown-toggle');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
 
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');

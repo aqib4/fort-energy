@@ -143,10 +143,14 @@ $navItems = [
 
     <ul class="nav-links" id="navLinks" role="list">
       <li role="listitem" class="nav-item-dropdown">
-        <a href="<?= BASE_URL ?>commercial" <?php if ($activePage === 'commercial'): ?>class="active"<?php endif; ?>>
-          Commercial &amp; Industrial <span class="dropdown-arrow">▼</span>
-        </a>
+        <div class="nav-link-wrap">
+          <a href="#">
+            Commercial &amp; Industrial
+          </a>
+          <button class="dropdown-toggle" aria-expanded="false" aria-label="Toggle submenu"><span class="dropdown-arrow">▼</span></button>
+        </div>
         <ul class="nav-dropdown">
+          <li><a href="<?= BASE_URL ?>commercial">Commercial &amp; Industrial</a></li>
           <li><a href="<?= BASE_URL ?>commercial/specialist">Specialist Services</a></li>
         </ul>
       </li>
@@ -158,10 +162,14 @@ $navItems = [
       </li>
 
       <li role="listitem" class="nav-item-dropdown">
-        <a href="<?= BASE_URL ?>residential" <?php if ($activePage === 'residential'): ?>class="active"<?php endif; ?>>
-          Residential Systems <span class="dropdown-arrow">▼</span>
-        </a>
+        <div class="nav-link-wrap">
+          <a href="#" >
+            Residential
+          </a>
+          <button class="dropdown-toggle" aria-expanded="false" aria-label="Toggle submenu"><span class="dropdown-arrow">▼</span></button>
+        </div>
         <ul class="nav-dropdown">
+          <li><a href="<?= BASE_URL ?>residential">Residential Systems</a></li>
           <li><a href="<?= BASE_URL ?>residential/solar-reroof">Solar Reroof</a></li>
           <li><a href="<?= BASE_URL ?>residential/custom">Custom Residential</a></li>
         </ul>
@@ -176,6 +184,12 @@ $navItems = [
       <li role="listitem">
         <a href="<?= BASE_URL ?>bipv" <?php if ($activePage === 'bipv'): ?>class="active"<?php endif; ?>>
           BIPV
+        </a>
+      </li>
+
+      <li role="listitem">
+        <a href="<?= BASE_URL ?>case-studies" <?php if ($activePage === 'case-studies'): ?>class="active"<?php endif; ?>>
+          Case Studies
         </a>
       </li>
 
@@ -198,6 +212,6 @@ $navItems = [
       <span></span>
       <span></span>
     </button>
-
   </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
   <!-- /nav — page content starts immediately below -->

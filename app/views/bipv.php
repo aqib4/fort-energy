@@ -19,7 +19,7 @@ ob_start();
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
-    <a href="/" class="bc-item">Home</a>
+    <a href="<?= BASE_URL ?>" class="bc-item">Home</a>
     <span class="bc-sep">/</span>
     <span class="bc-current">Building Integrated Solar</span>
 </div>
@@ -31,8 +31,8 @@ ob_start();
         <h1 class="hero-h1">Solar as<br><em>architecture</em></h1>
         <p class="hero-sub">In-roof systems, cladding and facades, curtain walls and glazing. BIPV specified for architects, developers and contractors where the solar installation is also the building envelope — not an addition to it.</p>
         <div class="hero-ctas">
-            <a href="/contact" class="btn-primary">Book a specifier consultation →</a>
-            <a href="/contact" class="btn-secondary">Request product information</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-primary">Book a specifier consultation →</a>
+            <a href="<?= BASE_URL ?>contact" class="btn-secondary">Request product information</a>
         </div>
     </div>
 
@@ -323,7 +323,7 @@ ob_start();
             <div class="spec-label">Designed for specifiers</div>
             <h2 class="spec-title">How we work<br>with <em>design teams</em></h2>
             <p class="spec-body">BIPV requires early involvement to be effective. We work alongside architects, structural engineers and envelope contractors from feasibility through to practical completion — providing technical input at each RIBA stage rather than arriving at construction with a product to retrofit.</p>
-            <a href="/contact" class="spec-cta">Book a specifier consultation →</a>
+            <a href="<?= BASE_URL ?>contact" class="spec-cta">Book a specifier consultation →</a>
         </div>
         <div class="spec-steps">
             <div class="spec-step">
@@ -444,7 +444,7 @@ ob_start();
                     <div class="cs-outcome-dot"></div>EV charging infrastructure powered from facade generation
                 </div>
             </div>
-            <a href="/case-studies" class="cs-link">Read full case study →</a>
+            <a href="<?= BASE_URL ?>case-studies/mixed-use-bipv-bristol" class="cs-link">Read full case study →</a>
         </div>
     </div>
 </section>
@@ -456,8 +456,8 @@ ob_start();
         <p class="cta-band-sub">BIPV works best when it is part of the design from the start. If you have a project at feasibility or concept stage, talk to us now — we'll provide product options, indicative yield modelling and early cost input without charge.</p>
     </div>
     <div class="cta-group">
-        <a href="/contact" class="btn-primary">Book a specifier consultation →</a>
-        <a href="/contact" class="btn-secondary">Request product information</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-primary">Book a specifier consultation →</a>
+        <a href="<?= BASE_URL ?>contact" class="btn-secondary">Request product information</a>
     </div>
 </section>
 

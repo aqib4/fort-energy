@@ -410,7 +410,7 @@ ob_start();
                 <div class="cs-loc">West Midlands · Commercial Office</div>
                 <h3 class="cs-title">Solar, storage and generator integration within DNO import limits</h3>
                 <p class="cs-summary">245 kWp rooftop array with 180 kWh BESS and a 150 kVA standby generator configured as a hybrid system under PLC control. DNO export set to zero. Grid import reduced by 61% during working hours. Generator runtime reduced from 180 to 12 hours per year. Payback modelled at 5.2 years against current tariff.</p>
-                <a href="<?= BASE_URL ?>case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies/commercial-office-west-midlands" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>

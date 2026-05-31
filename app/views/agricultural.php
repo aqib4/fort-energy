@@ -145,7 +145,7 @@ ob_start();
         <!-- Roof mounted -->
         <div class="type-card">
             <div class="type-img">
-                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80&fit=crop" alt="Large roof-mounted solar array on agricultural barn" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Large roof-mounted solar array on agricultural barn" loading="lazy" />
                 <div class="type-img-overlay"></div>
                 <div class="type-img-label">
                     <div class="type-img-tag">Installation type 01</div>
@@ -166,7 +166,7 @@ ob_start();
         <!-- Ground mounted -->
         <div class="type-card">
             <div class="type-img">
-                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80&fit=crop" alt="Ground-mount solar array in agricultural field setting" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Ground-mount solar array in agricultural field setting" loading="lazy" />
                 <div class="type-img-overlay"></div>
                 <div class="type-img-label">
                     <div class="type-img-tag">Installation type 02</div>
@@ -198,25 +198,37 @@ ob_start();
 
     <div class="systems-grid">
         <div class="sys-card reveal">
-            <span class="sys-num">01</span>
+            <div class="cap-img">
+                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Roof-mounted solar PV panels on agricultural barn optimized for self-consumption" loading="lazy" />
+                <div class="cap-img-overlay"></div>
+            </div>
             <div class="sys-title">Solar PV — self-consumption</div>
             <div class="sys-desc">Array sized to match daytime operational load. Generation directly offsets grid import during peak consumption periods — dairy milking, refrigeration, grain drying and irrigation pumping. Smart export where surplus is available.</div>
             <div class="sys-tags"><span class="sys-tag">SELF-CONSUMPTION</span><span class="sys-tag">SMART EXPORT</span><span class="sys-tag">DNO MANAGED</span></div>
         </div>
         <div class="sys-card reveal rd1">
-            <span class="sys-num">02</span>
+            <div class="cap-img">
+                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Solar panels integrated with modular commercial battery storage systems on a dairy farm" loading="lazy" />
+                <div class="cap-img-overlay"></div>
+            </div>
             <div class="sys-title">Solar + battery storage</div>
             <div class="sys-desc">Battery storage captures surplus generation for use during evening milking sessions, overnight refrigeration and early morning operations. Peak demand reduction and time-of-use tariff optimisation. Resilience against grid outages on remote rural connections.</div>
             <div class="sys-tags"><span class="sys-tag">SOLAR + BESS</span><span class="sys-tag">EVENING LOAD</span><span class="sys-tag">GRID RESILIENCE</span></div>
         </div>
         <div class="sys-card reveal">
-            <span class="sys-num">03</span>
+            <div class="cap-img">
+                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Large-scale ground-mounted solar array configured for maximum export capacity on agricultural land" loading="lazy" />
+                <div class="cap-img-overlay"></div>
+            </div>
             <div class="sys-title">Export-optimised system</div>
             <div class="sys-desc">Large ground-mount or multi-building roof array sized for maximum generation and export. G99/G100 application managed end-to-end. Smart Export Guarantee income modelled over 25-year system life. Suitable for farms with available land and strong grid connection.</div>
             <div class="sys-tags"><span class="sys-tag">MAX EXPORT</span><span class="sys-tag">SEG INCOME</span><span class="sys-tag">G99 / G100</span></div>
         </div>
         <div class="sys-card reveal rd1">
-            <span class="sys-num">04</span>
+            <div class="cap-img">
+                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Hybrid energy control panel connecting solar arrays, battery storage, and a standby diesel generator" loading="lazy" />
+                <div class="cap-img-overlay"></div>
+            </div> 
             <div class="sys-title">Hybrid with standby generation</div>
             <div class="sys-desc">Integration of existing diesel standby generation with solar and battery. Hybrid control minimises generator runtime and fuel consumption whilst maintaining supply security. Critical for dairy sites where power interruption directly affects animal welfare and milk quality.</div>
             <div class="sys-tags"><span class="sys-tag">HYBRID</span><span class="sys-tag">DIESEL INTEGRATION</span><span class="sys-tag">SUPPLY SECURITY</span></div>
@@ -345,7 +357,7 @@ ob_start();
                         <div class="cs-outcome-dot"></div>Payback modelled at 4.6 years
                     </div>
                 </div>
-                <a href="/case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies/dairy-farm-shropshire " class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>

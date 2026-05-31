@@ -311,7 +311,7 @@ ob_start();
                         <div class="cs-outcome-dot"></div>Payback modelled at 9.4 years on combined project cost
                     </div>
                 </div>
-                <a href="/case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies/period-property-solar-reroof" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>

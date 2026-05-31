@@ -17,18 +17,22 @@ class Router {
             
             // If the action is a simple view file name (e.g., 'home.php')
             if (is_string($action) && strpos($action, '.php') !== false) {
-                $this->renderView($action);
+                $this->renderView($action, $uri);
             } 
             // If the action is a callback function
             else if (is_callable($action)) {
                 call_user_func($action);
             }
         } else {
-            $this->renderView('404.php');
+            $this->renderView('404.php', $uri);
         }
     }
 
-    protected function renderView($view) {
+    protected function renderView($view, $uri = '') {
+        // Extract the slug (last URL segment) and make it available to views
+        $segments = explode('/', trim($uri, '/'));
+        $slug = end($segments);
+        
         $viewPath = __DIR__ . '/../views/' . $view;
         if (file_exists($viewPath)) {
             require $viewPath;

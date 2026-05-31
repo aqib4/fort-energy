@@ -224,86 +224,79 @@ ob_start();
         <!-- Checklist -->
         <div class="checklist reveal">
             <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+               
                 <div class="check-content">
+                    <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Whole-site energy demand modelling and strategy report for planning submission" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">Energy strategy &amp; modelling</div>
                     <div class="check-sub">Whole-site energy demand modelling at feasibility stage. Load forecasting across all dwelling types, communal areas and EV infrastructure. Strategy report suitable for planning submission.</div>
                 </div>
             </div>
-            <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+            <div class="check-item">       
                 <div class="check-content">
+                    <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Renewable energy system design for HMO and community-scale residential developments" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">HMO &amp; community renewable strategy</div>
                     <div class="check-sub">Energy system design for houses in multiple occupation and community-scale sites. Shared generation assets, split metering strategies and virtual net metering where applicable.</div>
                 </div>
             </div>
             <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+               
                 <div class="check-content">
+                     <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Centralised plant room layout containing battery storage, inverter arrays and control systems" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">Plant room design</div>
                     <div class="check-sub">Spatial coordination and technical design of centralised plant rooms including substation, battery storage, inverter arrays, EV infrastructure and heat generation equipment.</div>
                 </div>
             </div>
             <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+                
                 <div class="check-content">
+                     <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Coordinated heating network and domestic hot water strategy design for residential schemes" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">Heating &amp; DHW scheme-wide design</div>
                     <div class="check-sub">Coordinated heating and domestic hot water strategy across the full development. Heat network design, ASHP integration, cylinder sizing and solar thermal or surplus PV diversion to hot water.</div>
                 </div>
             </div>
             <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+                
                 <div class="check-content">
+                     <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Peak shaving and capacity-constrained design featuring battery storage integration" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">Peak shaving &amp; capacity-constrained design</div>
                     <div class="check-sub">Energy system design that stays within agreed supply capacity. Battery storage, demand management and load prioritisation used to avoid grid reinforcement cost and programme delay.</div>
                 </div>
             </div>
             <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+        
                 <div class="check-content">
+                     <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Embedded generation grid applications management and protection relay setups" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">G99 / G100 application management</div>
                     <div class="check-sub">End-to-end management of DNO grid applications for embedded generation. Protection relay settings, export limitation, technical submissions and liaison with network operators throughout.</div>
                 </div>
             </div>
             <div class="check-item">
-                <div class="check-box"><svg viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></div>
+               
                 <div class="check-content">
+                    <div class="cap-img">
+                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="In-roof and building-integrated photovoltaics design and solar MCS installation" loading="lazy" />
+                        <div class="cap-img-overlay"></div>
+                    </div>
                     <div class="check-title">Solar &amp; renewables design and installation</div>
                     <div class="check-sub">In-roof, roof-mounted and BIPV solar across all development typologies. System design, MCS certification, inverter and storage specification, and full installation management.</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Image stack: real project photography placeholders -->
-        <div class="services-image-stack reveal rd1">
-            <div class="svc-img-card">
-                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=700&q=80&fit=crop" alt="Residential development rooftop solar installation" loading="lazy" />
-                <div class="svc-img-overlay"></div>
-                <div class="svc-img-caption">
-                    <div class="svc-img-caption-label">Energy strategy &amp; plant room</div>
-                    <div class="svc-img-caption-title">Whole-site energy modelled at feasibility</div>
-                </div>
-            </div>
-            <div class="svc-img-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Development plant room with battery storage and electrical infrastructure" loading="lazy" />
-                <div class="svc-img-overlay"></div>
-                <div class="svc-img-caption">
-                    <div class="svc-img-caption-label">Plant room &amp; BESS</div>
-                    <div class="svc-img-caption-title">Centralised storage within agreed grid capacity</div>
                 </div>
             </div>
         </div>
@@ -446,7 +439,7 @@ ob_start();
                 <div class="cs-loc">North West England · Student Accommodation</div>
                 <h3 class="cs-title">Capacity-constrained site — solar and storage avoided grid infrastructure upgrade</h3>
                 <p class="cs-summary">360 kWp in-roof solar array with 200 kWh BESS across a 180-bed student accommodation block. Grid connection capacity was insufficient for full electrification without a substation upgrade costing £1.2M and adding 14 months to the programme. Peak shaving and demand management strategy designed to stay within the existing agreed supply capacity. Infrastructure upgrade avoided entirely. Planning authority satisfied renewable energy condition at detailed stage.</p>
-                <a href="<?= BASE_URL ?>case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies/student-accommodation-north-west" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>
@@ -528,9 +521,6 @@ ob_start();
 
 
 <script>
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
     const io = new IntersectionObserver((entries) => {
         entries.forEach(e => {
             if (e.isIntersecting) {

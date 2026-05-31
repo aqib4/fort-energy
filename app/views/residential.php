@@ -450,7 +450,7 @@ ob_start();
                         <div class="cs-outcome-dot"></div>Payback modelled at 6.8 years
                     </div>
                 </div>
-                <a href="<?= BASE_URL ?>case-studies" class="cs-link">Read full case study →</a>
+                <a href="<?= BASE_URL ?>case-studies/4-bed-performance-system" class="cs-link">Read full case study →</a>
             </div>
         </div>
     </div>

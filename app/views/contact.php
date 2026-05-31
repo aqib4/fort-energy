@@ -215,6 +215,8 @@ ob_start();
 
             <!-- 1: Commercial office -->
             <article class="cs-item">
+                <a style="text-decoration:none;color:inherit;" 
+                href="<?= BASE_URL ?>case-studies/commercial-office-west-midlands">
                 <div class="cs-item-inner">
                     <div class="cs-item-top">
                         <span class="cs-item-sector">Commercial</span>
@@ -237,10 +239,13 @@ ob_start();
                         </div>
                     </div>
                 </div>
+                </a>
             </article>
 
             <!-- 2: Student accommodation -->
             <article class="cs-item">
+                 <a style="text-decoration:none;color:inherit;" 
+                href="<?= BASE_URL ?>case-studies/student-accommodation-north-west">
                 <div class="cs-item-inner">
                     <div class="cs-item-top">
                         <span class="cs-item-sector">Developers</span>
@@ -263,10 +268,13 @@ ob_start();
                         </div>
                     </div>
                 </div>
+                </a>
             </article>
 
             <!-- 3: Dairy farm -->
             <article class="cs-item">
+                 <a style="text-decoration:none;color:inherit;" 
+                href="<?= BASE_URL ?>case-studies/dairy-farm-shropshire">
                 <div class="cs-item-inner">
                     <div class="cs-item-top">
                         <span class="cs-item-sector">Agricultural</span>
@@ -289,59 +297,9 @@ ob_start();
                         </div>
                     </div>
                 </div>
+                </a>
             </article>
 
-            <!-- 4: Period property reroof -->
-            <article class="cs-item">
-                <div class="cs-item-inner">
-                    <div class="cs-item-top">
-                        <span class="cs-item-sector">Residential</span>
-                        <span class="cs-item-location">West Yorkshire</span>
-                    </div>
-                    <h3 class="cs-item-title">Period property — full solar reroof, 14 kWp across all four pitches</h3>
-                    <p class="cs-item-challenge">Conservation area restrictions ruled out standard solar panels. Property required reroofing within two years.</p>
-                    <div class="cs-flow">
-                        <div class="cs-flow-item">
-                            <div class="cs-flow-label">Challenge</div>
-                            <div class="cs-flow-val">Conservation area · roof due for replacement</div>
-                        </div>
-                        <div class="cs-flow-item">
-                            <div class="cs-flow-label">System</div>
-                            <div class="cs-flow-val">14 kWp solar reroof + 24 kWh BESS · 4 pitches</div>
-                        </div>
-                        <div class="cs-flow-item">
-                            <div class="cs-flow-label">Outcome</div>
-                            <div class="cs-flow-val">£2,400 yr1 saving · combined cost below two projects</div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 5: Mixed-use BIPV -->
-            <article class="cs-item">
-                <div class="cs-item-inner">
-                    <div class="cs-item-top">
-                        <span class="cs-item-sector">BIPV</span>
-                        <span class="cs-item-location">Bristol</span>
-                    </div>
-                    <h3 class="cs-item-title">Mixed-use development — 275 kWp BIPV across in-roof and cladding facades</h3>
-                    <p class="cs-item-challenge">Planning condition requiring on-site renewables. Design team needed solar integrated into the envelope without compromising architectural intent.</p>
-                    <div class="cs-flow">
-                        <div class="cs-flow-item">
-                            <div class="cs-flow-label">Challenge</div>
-                            <div class="cs-flow-val">Planning condition · architectural constraints</div>
-                        </div>
-                        <div class="cs-flow-item">
-                            <div class="cs-flow-label">System</div>
-                            <div class="cs-flow-val">180 kWp in-roof + 95 kWp facade cladding</div>
-                        </div>
-                        <div class="cs-flow-item">
-                            <div class="cs-flow-label">Outcome</div>
-                            <div class="cs-flow-val">58% demand offset · BREEAM Excellent · condition met</div>
-                        </div>
-                    </div>
-                </div>
-            </article>
 
         </div>
 

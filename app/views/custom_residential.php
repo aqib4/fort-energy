@@ -473,7 +473,7 @@ ob_start();
                     <div class="cs-system-spec">22 kW — solar-first scheduled</div>
                 </div>
             </div>
-            <a href="/case-studies" class="cs-link">Read full case study →</a>
+            <a href="<?= BASE_URL ?>case-studies/high-spec-new-build-surrey" class="cs-link">Read full case study →</a>
         </div>
     </div>
 </section>

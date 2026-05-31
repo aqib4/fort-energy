@@ -203,7 +203,7 @@ ob_start();
     <!-- Developers -->
     <a href="<?= BASE_URL ?>developers" class="sector-card">
       <div class="sector-img">
-        <img src="<?= BASE_URL ?>assets/img/developers/1.png" alt="Developers energy strategy" loading="lazy" />
+        <img src="<?= BASE_URL ?>assets/img/home/placeholder.png" alt="Developers energy strategy" loading="lazy" />
         <div class="sector-img-overlay"></div>
         <span class="sector-img-ref">02</span>
       </div>
@@ -243,7 +243,7 @@ ob_start();
     <!-- Agricultural -->
     <a href="<?= BASE_URL ?>agricultural" class="sector-card">
       <div class="sector-img">
-        <img src="<?= BASE_URL ?>assets/img/agricultural/1.png" alt="Agricultural solar installation" loading="lazy" />
+        <img src="<?= BASE_URL ?>assets/img/home/placeholder.png" alt="Agricultural solar installation" loading="lazy" />
         <div class="sector-img-overlay"></div>
         <span class="sector-img-ref">04</span>
       </div>
@@ -329,11 +329,11 @@ ob_start();
         <span class="cs-sector-badge">Commercial &amp; Industrial</span>
         <div class="cs-metrics">
           <div class="cs-metric">
-            <span class="cs-metric-val">480<em> kWp</em></span>
+            <span class="cs-metric-val">245<em> kWp</em></span>
             <span class="cs-metric-key">System size</span>
           </div>
           <div class="cs-metric">
-            <span class="cs-metric-val">320<em> kWh</em></span>
+            <span class="cs-metric-val">180<em> kWh</em></span>
             <span class="cs-metric-key">Battery storage</span>
           </div>
           <div class="cs-metric">
@@ -344,9 +344,9 @@ ob_start();
       </div>
       <div class="cs-body">
         <div class="cs-location">West Midlands · Manufacturing</div>
-        <h3 class="cs-title">480 kWp roof array with 320 kWh BESS and peak shaving control</h3>
-        <p class="cs-summary">Rooftop array across three warehouse spans, integrated with a 320 kWh battery system and a PLC-controlled peak shaving strategy. Grid import reduced by 74% during peak tariff periods. Payback modelled at 4.8 years.</p>
-        <a href="<?= BASE_URL ?>case-studies" class="cs-link">View full case study →</a>
+        <h3 class="cs-title">245 kWp roof array with 180 kWh BESS and peak shaving control</h3>
+        <p class="cs-summary">Rooftop array across three warehouse spans, integrated with a 180 kWh battery system and a PLC-controlled peak shaving strategy. Grid import reduced by 61% during peak tariff periods. Payback modelled at 5.2 years.</p>
+        <a href="<?= BASE_URL ?>case-studies/commercial-warehouse-peak-shaving" class="cs-link">View full case study →</a>
       </div>
     </div>
   </div>
