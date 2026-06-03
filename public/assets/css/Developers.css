@@ -370,7 +370,6 @@
  .cap-img {
    position: relative;
    height: 400px;
-   border-radius: 10px;
    margin-bottom: 20px;
    overflow: hidden;
    flex-shrink: 0;

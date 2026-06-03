@@ -402,40 +402,10 @@ ob_start();
         <div class="cs-panel">
             <div class="cs-bg"></div>
             <span class="cs-badge">Custom Residential — High-Specification New Build</span>
-            <!-- inline system map -->
-            <svg width="100%" viewBox="0 0 520 72" fill="none" style="position:relative;z-index:1;margin-top:16px;">
-                <!-- nodes -->
-                <rect x="4" y="22" width="60" height="24" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="0.8" />
-                <text x="34" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">SOLAR</text>
-                <text x="34" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.3)">reroof 18kWp</text>
-                <line x1="64" y1="34" x2="78" y2="34" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" />
-                <rect x="78" y="22" width="60" height="24" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="0.8" />
-                <text x="108" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">BESS</text>
-                <text x="108" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.3)">64 kWh</text>
-                <line x1="138" y1="34" x2="152" y2="34" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.3s" />
-                <rect x="152" y="22" width="60" height="24" rx="2" fill="rgba(10,107,82,0.1)" stroke="#0A6B52" stroke-width="0.8" />
-                <text x="182" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">GSHP</text>
-                <text x="182" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.3)">ground-source</text>
-                <line x1="212" y1="34" x2="226" y2="34" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.5s" />
-                <rect x="226" y="22" width="50" height="24" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.3)" stroke-width="0.8" />
-                <text x="251" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">MVHR</text>
-                <text x="251" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.25)">heat recovery</text>
-                <line x1="276" y1="34" x2="290" y2="34" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.7s" />
-                <rect x="290" y="22" width="56" height="24" rx="2" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.25)" stroke-width="0.8" />
-                <text x="318" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(10,107,82,0.6)">POOL</text>
-                <text x="318" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.2)">heat + ventilation</text>
-                <line x1="346" y1="34" x2="360" y2="34" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.9s" />
-                <rect x="360" y="22" width="50" height="24" rx="2" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.2)" stroke-width="0.8" />
-                <text x="385" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(10,107,82,0.5)">EV</text>
-                <text x="385" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.2)">22 kW charge</text>
-                <line x1="410" y1="34" x2="424" y2="34" stroke="rgba(10,107,82,0.3)" stroke-width="0.8" stroke-dasharray="3 2" />
-                <rect x="424" y="22" width="88" height="24" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="0.8" />
-                <text x="468" y="32" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">EMS CONTROL</text>
-                <text x="468" y="41" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.25)">all systems coordinated</text>
-                <!-- EMS control line across all -->
-                <line x1="34" y1="56" x2="512" y2="56" stroke="rgba(10,107,82,0.2)" stroke-width="0.8" stroke-dasharray="4 4" />
-                <text x="268" y="66" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(10,107,82,0.4)" letter-spacing="1">EMS COORDINATION LAYER</text>
-            </svg>
+             <div class="cap-img">
+                <img src="<?= BASE_URL ?>assets/img/custom-residential/custom-residentials-placeholder-case-study.png" style="object-fit:fit" alt="Building integrated solar in-roof BIPV system on high specification home" loading="lazy" />
+                <div class="cap-img-overlay"></div>
+            </div>
             <div class="cs-metrics-strip">
                 <div class="csm"><span class="csm-val">18<em> kWp</em></span><span class="csm-key">Solar reroof</span></div>
                 <div class="csm"><span class="csm-val">64<em> kWh</em></span><span class="csm-key">Storage</span></div>

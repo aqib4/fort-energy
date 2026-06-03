@@ -12,7 +12,7 @@ return [
         'location' => 'West Midlands',
         'building_type' => 'Manufacturing & warehouse — 12,000 m²',
         'completed' => 'March 2024',
-        'hero_img' => 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1400&q=80&fit=crop',
+        'hero_img' => '/assets/img/commercial/placeholder.png',
         'hero_alt' => '245 kWp commercial rooftop solar array on West Midlands warehouse with peak shaving BESS',
         'metrics' => [
             ['val'=>'245','unit'=>' kWp','key'=>'Solar array'],

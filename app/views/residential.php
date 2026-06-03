@@ -394,38 +394,10 @@ ob_start();
             <div class="cs-panel">
                 <div class="cs-bg"></div>
                 <span class="cs-badge">Residential — Performance tier</span>
-                <!-- inline system flow diagram -->
-                <svg width="100%" viewBox="0 0 320 80" fill="none" style="position:relative;z-index:1;margin-top:16px;">
-                    <!-- Solar → Inverter -->
-                    <rect x="4" y="24" width="56" height="28" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="32" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">SOLAR</text>
-                    <text x="32" y="46" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">9.2 kWp</text>
-                    <line x1="60" y1="38" x2="84" y2="38" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" />
-                    <!-- Inverter/EMS -->
-                    <rect x="84" y="24" width="64" height="28" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="116" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">INVERTER</text>
-                    <text x="116" y="46" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">EMS</text>
-                    <!-- Battery -->
-                    <rect x="4" y="58" width="56" height="18" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.35)" stroke-width="0.8" />
-                    <text x="32" y="70" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">BATTERY 16kWh</text>
-                    <path d="M 116 52 L 32 58" stroke="rgba(10,107,82,0.5)" stroke-width="0.8" stroke-dasharray="3 3" class="flow-line" style="animation-delay:0.5s" />
-                    <!-- EV -->
-                    <rect x="164" y="4" width="56" height="28" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.3)" stroke-width="0.8" />
-                    <text x="192" y="21" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">EV ⚡</text>
-                    <line x1="148" y1="30" x2="164" y2="18" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.3s" />
-                    <!-- Hot water -->
-                    <rect x="164" y="42" width="56" height="28" rx="2" fill="rgba(200,118,42,0.08)" stroke="rgba(200,118,42,0.25)" stroke-width="0.8" />
-                    <text x="192" y="53" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(200,118,42,0.6)">HOT WATER</text>
-                    <text x="192" y="63" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.2)">solar divert</text>
-                    <line x1="148" y1="46" x2="164" y2="56" stroke="rgba(200,118,42,0.4)" stroke-width="0.8" stroke-dasharray="3 3" class="flow-line" style="animation-delay:0.7s" />
-                    <!-- MVHR -->
-                    <rect x="236" y="4" width="80" height="28" rx="2" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.2)" stroke-width="0.8" />
-                    <text x="276" y="21" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(10,107,82,0.6)">MVHR</text>
-                    <!-- Grid -->
-                    <rect x="236" y="42" width="80" height="28" rx="2" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" />
-                    <text x="276" y="59" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">GRID EXPORT</text>
-                    <line x1="220" y1="38" x2="236" y2="55" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" stroke-dasharray="3 4" />
-                </svg>
+                 <div class="int-img">
+                <img src="<?= BASE_URL ?>/assets/img/residential/residentials-placeholder-caseStudy.png" alt="EV charger integrated with home solar system" loading="lazy" />
+                <div class="int-img-overlay"></div>
+            </div>
                 <div class="cs-metrics-strip">
                     <div class="csm"><span class="csm-val">9.2<em> kWp</em></span><span class="csm-key">Solar</span></div>
                     <div class="csm"><span class="csm-val">16<em> kWh</em></span><span class="csm-key">Storage</span></div>

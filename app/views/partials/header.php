@@ -144,10 +144,10 @@ $navItems = [
     <ul class="nav-links" id="navLinks" role="list">
       <li role="listitem" class="nav-item-dropdown">
         <div class="nav-link-wrap">
-          <a href="#">
+          <a href="#" class="dropdown-toggle nav-dropdown-link" aria-expanded="false" aria-label="Toggle submenu">
             Commercial &amp; Industrial
+            <span class="dropdown-arrow">▼</span>  
           </a>
-          <button class="dropdown-toggle" aria-expanded="false" aria-label="Toggle submenu"><span class="dropdown-arrow">▼</span></button>
         </div>
         <ul class="nav-dropdown">
           <li><a href="<?= BASE_URL ?>commercial">Commercial &amp; Industrial</a></li>
@@ -163,10 +163,10 @@ $navItems = [
 
       <li role="listitem" class="nav-item-dropdown">
         <div class="nav-link-wrap">
-          <a href="#" >
+          <a href="#" class="dropdown-toggle nav-dropdown-link" aria-expanded="false" aria-label="Toggle submenu">
             Residential
+            <span class="dropdown-arrow">▼</span>
           </a>
-          <button class="dropdown-toggle" aria-expanded="false" aria-label="Toggle submenu"><span class="dropdown-arrow">▼</span></button>
         </div>
         <ul class="nav-dropdown">
           <li><a href="<?= BASE_URL ?>residential">Residential Systems</a></li>

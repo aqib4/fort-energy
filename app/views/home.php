@@ -203,7 +203,7 @@ ob_start();
     <!-- Developers -->
     <a href="<?= BASE_URL ?>developers" class="sector-card">
       <div class="sector-img">
-        <img src="<?= BASE_URL ?>assets/img/home/placeholder.png" alt="Developers energy strategy" loading="lazy" />
+        <img src="<?= BASE_URL ?>assets/img/home/home-placeholder-developers.png" alt="Developers energy strategy" loading="lazy" />
         <div class="sector-img-overlay"></div>
         <span class="sector-img-ref">02</span>
       </div>
@@ -243,7 +243,7 @@ ob_start();
     <!-- Agricultural -->
     <a href="<?= BASE_URL ?>agricultural" class="sector-card">
       <div class="sector-img">
-        <img src="<?= BASE_URL ?>assets/img/home/placeholder.png" alt="Agricultural solar installation" loading="lazy" />
+        <img src="<?= BASE_URL ?>assets/img/home/home-placeholder-agriculture.png" alt="Agricultural solar installation" loading="lazy" />
         <div class="sector-img-overlay"></div>
         <span class="sector-img-ref">04</span>
       </div>

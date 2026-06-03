@@ -145,7 +145,7 @@ ob_start();
         <!-- Roof mounted -->
         <div class="type-card">
             <div class="type-img">
-                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Large roof-mounted solar array on agricultural barn" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-roof.png" alt="Large roof-mounted solar array on agricultural barn" loading="lazy" />
                 <div class="type-img-overlay"></div>
                 <div class="type-img-label">
                     <div class="type-img-tag">Installation type 01</div>
@@ -166,7 +166,7 @@ ob_start();
         <!-- Ground mounted -->
         <div class="type-card">
             <div class="type-img">
-                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Ground-mount solar array in agricultural field setting" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-ground.png" alt="Ground-mount solar array in agricultural field setting" loading="lazy" />
                 <div class="type-img-overlay"></div>
                 <div class="type-img-label">
                     <div class="type-img-tag">Installation type 02</div>
@@ -199,7 +199,7 @@ ob_start();
     <div class="systems-grid">
         <div class="sys-card reveal">
             <div class="cap-img">
-                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Roof-mounted solar PV panels on agricultural barn optimized for self-consumption" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-solar-pv.png" alt="Roof-mounted solar PV panels on agricultural barn optimized for self-consumption" loading="lazy" />
                 <div class="cap-img-overlay"></div>
             </div>
             <div class="sys-title">Solar PV — self-consumption</div>
@@ -208,7 +208,7 @@ ob_start();
         </div>
         <div class="sys-card reveal rd1">
             <div class="cap-img">
-                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Solar panels integrated with modular commercial battery storage systems on a dairy farm" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-battery.png" alt="Solar panels integrated with modular commercial battery storage systems on a dairy farm" loading="lazy" />
                 <div class="cap-img-overlay"></div>
             </div>
             <div class="sys-title">Solar + battery storage</div>
@@ -217,7 +217,7 @@ ob_start();
         </div>
         <div class="sys-card reveal">
             <div class="cap-img">
-                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Large-scale ground-mounted solar array configured for maximum export capacity on agricultural land" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-optimized-system.png" alt="Large-scale ground-mounted solar array configured for maximum export capacity on agricultural land" loading="lazy" />
                 <div class="cap-img-overlay"></div>
             </div>
             <div class="sys-title">Export-optimised system</div>
@@ -226,7 +226,7 @@ ob_start();
         </div>
         <div class="sys-card reveal rd1">
             <div class="cap-img">
-                <img src="<?= BASE_URL ?>assets/img/agricultural/placeholder.png" alt="Hybrid energy control panel connecting solar arrays, battery storage, and a standby diesel generator" loading="lazy" />
+                <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-hybrid.png" alt="Hybrid energy control panel connecting solar arrays, battery storage, and a standby diesel generator" loading="lazy" />
                 <div class="cap-img-overlay"></div>
             </div> 
             <div class="sys-title">Hybrid with standby generation</div>
@@ -309,30 +309,10 @@ ob_start();
             <div class="cs-panel">
                 <div class="cs-bg"></div>
                 <span class="cs-badge">Agricultural — Dairy Farm</span>
-                <svg width="100%" viewBox="0 0 320 80" fill="none" style="position:relative;z-index:1;margin-top:16px;">
-                    <rect x="4" y="24" width="60" height="28" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="34" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">SOLAR</text>
-                    <text x="34" y="47" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">280 kWp</text>
-                    <line x1="64" y1="38" x2="88" y2="38" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" />
-                    <rect x="88" y="24" width="64" height="28" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="120" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">INVERTER</text>
-                    <text x="120" y="47" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">EMS</text>
-                    <rect x="4" y="58" width="60" height="18" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.35)" stroke-width="0.8" />
-                    <text x="34" y="70" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="#0D8A6A">BESS 120kWh</text>
-                    <path d="M 120 52 L 34 58" stroke="rgba(10,107,82,0.5)" stroke-width="0.8" stroke-dasharray="3 3" class="flow-line" style="animation-delay:0.5s" />
-                    <rect x="168" y="4" width="72" height="28" rx="2" fill="rgba(200,118,42,0.08)" stroke="rgba(200,118,42,0.25)" stroke-width="0.8" />
-                    <text x="204" y="14" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(200,118,42,0.6)">DAIRY LOAD</text>
-                    <text x="204" y="25" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.2)">milking + refrigeration</text>
-                    <line x1="152" y1="30" x2="168" y2="18" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.3s" />
-                    <rect x="168" y="44" width="72" height="28" rx="2" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" />
-                    <text x="204" y="55" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.25)">GRID EXPORT</text>
-                    <text x="204" y="66" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.15)">SEG income</text>
-                    <line x1="152" y1="46" x2="168" y2="58" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" stroke-dasharray="3 4" />
-                    <rect x="256" y="24" width="60" height="28" rx="2" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.2)" stroke-width="0.8" />
-                    <text x="286" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(10,107,82,0.5)">DIESEL GEN</text>
-                    <text x="286" y="47" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.2)">hybrid standby</text>
-                    <line x1="240" y1="38" x2="256" y2="38" stroke="rgba(200,118,42,0.3)" stroke-width="0.8" stroke-dasharray="3 4" />
-                </svg>
+                <div class="type-img">
+                    <img src="<?= BASE_URL ?>assets/img/agricultural/agriculture-placeholder-case-study.png" style="object-fit:fit;" alt="280 kWp roof array with 120 kWh storage and diesel hybrid integration" loading="lazy" />
+                    <div class="type-img-overlay"></div>
+                </div>  
                 <div class="cs-metrics-strip">
                     <div class="csm"><span class="csm-val">280<em> kWp</em></span><span class="csm-key">Array size</span></div>
                     <div class="csm"><span class="csm-val">120<em> kWh</em></span><span class="csm-key">Battery</span></div>

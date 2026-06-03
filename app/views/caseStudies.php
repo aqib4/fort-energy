@@ -55,7 +55,7 @@ ob_start();
     <!-- FEATURED: Commercial -->
     <a href="<?= BASE_URL ?>case-studies/commercial-office-west-midlands" class="cs-card featured" data-sector="commercial">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&q=80&fit=crop" alt="245 kWp commercial rooftop solar array on West Midlands office building" loading="eager" width="900" height="600"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/commercial-&-Industrial-placeholder-case-study.png" alt="245 kWp commercial rooftop solar array on West Midlands office building" loading="eager" width="900" height="600"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Commercial &amp; Industrial</span>
@@ -78,7 +78,7 @@ ob_start();
     <!-- Commercial Specialist -->
     <a href="<?= BASE_URL ?>case-studies/off-grid-remote-site" class="cs-card" data-sector="commercial">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=700&q=80&fit=crop" alt="Off-grid solar installation remote commercial site" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/commercial-specialist-placeholder-case-study.png" alt="Off-grid solar installation remote commercial site" loading="lazy" width="700" height="300"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Commercial Specialist</span>
@@ -100,7 +100,7 @@ ob_start();
     <!-- Developers -->
     <a href="<?= BASE_URL ?>case-studies/student-accommodation-north-west" class="cs-card" data-sector="developers">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=700&q=80&fit=crop" alt="Student accommodation development with in-roof solar installation" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/developers-placeholder-case-study.png" alt="Student accommodation development with in-roof solar installation" loading="lazy" width="700" height="460"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Developers</span>
@@ -122,7 +122,7 @@ ob_start();
     <!-- Residential -->
     <a href="<?= BASE_URL ?>case-studies/4-bed-performance-system" class="cs-card" data-sector="residential">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="4-bed residential performance solar and battery installation" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/residentials-placeholder-case-study.png" alt="4-bed residential performance solar and battery installation" loading="lazy" width="700" height="460"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Residential</span>
@@ -144,7 +144,7 @@ ob_start();
     <!-- Solar Reroof -->
     <a href="<?= BASE_URL ?>case-studies/period-property-solar-reroof" class="cs-card" data-sector="residential">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80&fit=crop" alt="Period property Victorian semi solar reroof conservation area" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/solar-reroof-placeholder-case-study.png" alt="Period property Victorian semi solar reroof conservation area" loading="lazy" width="700" height="460"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Residential — Solar Reroof</span>
@@ -166,7 +166,7 @@ ob_start();
     <!-- Agricultural -->
     <a href="<?= BASE_URL ?>case-studies/dairy-farm-shropshire" class="cs-card" data-sector="agricultural">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1605732562742-3023a888e56e?w=700&q=80&fit=crop" alt="280 kWp roof solar array on Shropshire dairy farm" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/agriculture-placeholder-case-study.png" alt="280 kWp roof solar array on Shropshire dairy farm" loading="lazy" width="700" height="460"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Agricultural</span>
@@ -188,7 +188,7 @@ ob_start();
     <!-- BIPV -->
     <a href="<?= BASE_URL ?>case-studies/mixed-use-bipv-bristol" class="cs-card" data-sector="bipv">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80&fit=crop" alt="275 kWp BIPV mixed-use development Bristol facade and in-roof" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/bipv-reroof-placeholder-case-study.png" alt="275 kWp BIPV mixed-use development Bristol facade and in-roof" loading="lazy" width="700" height="460"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">BIPV</span>
@@ -210,7 +210,7 @@ ob_start();
     <!-- Custom Residential -->
     <a href="<?= BASE_URL ?>case-studies/high-spec-new-build-surrey" class="cs-card" data-sector="residential">
       <div class="cs-img">
-        <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=700&q=80&fit=crop" alt="High specification custom residential integrated energy system Surrey" loading="lazy" width="700" height="460"/>
+        <img src="<?php BASE_URL ?>assets/img/case-studies/custom-residentials-placeholder-case-study.png" alt="High specification custom residential integrated energy system Surrey" loading="lazy" width="700" height="460"/>
         <div class="cs-img-overlay"></div>
         <div class="cs-img-meta">
           <span class="cs-sector-badge">Custom Residential</span>

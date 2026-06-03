@@ -258,35 +258,10 @@ ob_start();
                 <div class="cs-bg"></div>
                 <span class="cs-badge">Solar Reroof — Period Property</span>
                 <!-- 4-pitch system diagram -->
-                <svg width="100%" viewBox="0 0 320 72" fill="none" style="position:relative;z-index:1;margin-top:16px;">
-                    <rect x="4" y="4" width="50" height="26" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="0.8" />
-                    <text x="29" y="14" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">SOUTH</text>
-                    <text x="29" y="24" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">5.2 kWp</text>
-                    <rect x="4" y="42" width="50" height="26" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.35)" stroke-width="0.8" />
-                    <text x="29" y="52" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">NORTH</text>
-                    <text x="29" y="62" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">3.1 kWp</text>
-                    <rect x="64" y="4" width="50" height="26" rx="2" fill="rgba(10,107,82,0.12)" stroke="rgba(10,107,82,0.3)" stroke-width="0.8" />
-                    <text x="89" y="14" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">EAST</text>
-                    <text x="89" y="24" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">2.8 kWp</text>
-                    <rect x="64" y="42" width="50" height="26" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.25)" stroke-width="0.8" />
-                    <text x="89" y="52" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">WEST</text>
-                    <text x="89" y="62" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.2)">2.9 kWp</text>
-                    <line x1="54" y1="17" x2="136" y2="35" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" />
-                    <line x1="54" y1="55" x2="136" y2="40" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.3s" />
-                    <line x1="114" y1="17" x2="136" y2="35" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.5s" />
-                    <line x1="114" y1="55" x2="136" y2="42" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.7s" />
-                    <rect x="136" y="24" width="60" height="24" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="166" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">INVERTER</text>
-                    <text x="166" y="44" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.25)">14 kWp total</text>
-                    <line x1="196" y1="36" x2="212" y2="36" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:0.9s" />
-                    <rect x="212" y="24" width="48" height="24" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="0.8" />
-                    <text x="236" y="35" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">BESS</text>
-                    <text x="236" y="44" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.25)">24 kWh</text>
-                    <line x1="260" y1="36" x2="276" y2="36" stroke="#0D8A6A" stroke-width="0.8" stroke-dasharray="3 2" class="flow-line" style="animation-delay:1.1s" />
-                    <rect x="276" y="22" width="40" height="28" rx="2" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" />
-                    <text x="296" y="34" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">HOME</text>
-                    <text x="296" y="44" text-anchor="middle" font-family="'DM Mono',monospace" font-size="5" fill="rgba(255,255,255,0.15)">+ export</text>
-                </svg>
+                <div class="where-img">
+                    <img style="object-fit:fit;" src="<?= BASE_URL ?>assets/img/solar-reroof/solar-reroof-placeholder-case-study.png" alt="Properties due for reroofing" loading="lazy" />
+                    <div class="where-img-overlay"></div>
+                </div>
                 <div class="cs-metrics-strip">
                     <div class="csm"><span class="csm-val">14<em> kWp</em></span><span class="csm-key">Total system</span></div>
                     <div class="csm"><span class="csm-val">24<em> kWh</em></span><span class="csm-key">Storage</span></div>

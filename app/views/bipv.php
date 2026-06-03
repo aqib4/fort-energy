@@ -386,39 +386,10 @@ ob_start();
         <div class="cs-panel">
             <div class="cs-bg"></div>
             <span class="cs-badge">BIPV — Mixed-Use Development</span>
-            <svg width="100%" viewBox="0 0 420 80" fill="none" style="position:relative;z-index:1;margin-top:16px;">
-                <!-- In-roof -->
-                <rect x="4" y="4" width="72" height="28" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                <text x="40" y="15" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">IN-ROOF</text>
-                <text x="40" y="26" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">180 kWp</text>
-                <!-- Facade -->
-                <rect x="4" y="48" width="72" height="28" rx="2" fill="rgba(10,107,82,0.12)" stroke="rgba(10,107,82,0.4)" stroke-width="1" />
-                <text x="40" y="59" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">FACADE</text>
-                <text x="40" y="70" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">95 kWp</text>
-                <!-- Combiner -->
-                <line x1="76" y1="18" x2="100" y2="38" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" />
-                <line x1="76" y1="62" x2="100" y2="42" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.4s" />
-                <rect x="100" y="28" width="60" height="24" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="1" />
-                <text x="130" y="38" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">COMBINED</text>
-                <text x="130" y="48" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">275 kWp</text>
-                <!-- Inverter -->
-                <line x1="160" y1="40" x2="184" y2="40" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.6s" />
-                <rect x="184" y="26" width="60" height="28" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="1" />
-                <text x="214" y="38" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">INVERTER</text>
-                <text x="214" y="48" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.25)">+ BESS</text>
-                <!-- Building loads -->
-                <line x1="244" y1="40" x2="268" y2="28" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.8s" />
-                <line x1="244" y1="40" x2="268" y2="52" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" stroke-dasharray="3 4" />
-                <rect x="268" y="4" width="72" height="24" rx="2" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.25)" stroke-width="0.8" />
-                <text x="304" y="18" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(10,107,82,0.6)">BUILDING LOAD</text>
-                <rect x="268" y="48" width="72" height="24" rx="2" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" />
-                <text x="304" y="62" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.25)">GRID EXPORT</text>
-                <!-- EV -->
-                <rect x="352" y="26" width="64" height="28" rx="2" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.2)" stroke-width="0.8" />
-                <text x="384" y="37" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(10,107,82,0.5)">EV CHARGE</text>
-                <text x="384" y="47" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.2)">car park</text>
-                <line x1="340" y1="28" x2="352" y2="36" stroke="rgba(10,107,82,0.3)" stroke-width="0.8" stroke-dasharray="3 3" />
-            </svg>
+            <div class="prod-img">
+                <img src="<?= BASE_URL ?>assets/img/bipv/Bipv-placeholder-case-study.png" style="object-fit:fit;" alt="Large roof-mounted solar array on agricultural barn" loading="lazy" />
+                <div class="prod-img-overlay"></div>
+            </div>
             <div class="cs-metrics-strip">
                 <div class="csm"><span class="csm-val">275<em> kWp</em></span><span class="csm-key">Total BIPV</span></div>
                 <div class="csm"><span class="csm-val">180<em> kWp</em></span><span class="csm-key">In-roof</span></div>

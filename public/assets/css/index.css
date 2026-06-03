@@ -135,6 +135,11 @@ nav {
   gap: 2px;
 }
 
+.nav-dropdown-link {
+  gap: 4px;
+  padding: 0;
+}
+
 .dropdown-toggle {
   background: transparent;
   border: none;

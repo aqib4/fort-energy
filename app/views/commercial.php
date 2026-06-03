@@ -360,46 +360,10 @@ ob_start();
             <div class="cs-panel">
                 <div class="cs-bg"></div>
                 <span class="cs-badge">Commercial — Office</span>
-                <!-- Inline mini infographic -->
-                <svg width="100%" viewBox="0 0 320 100" fill="none" style="position:relative;z-index:1;margin-top:16px;" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Solar → Inv → Bat / Grid / Load flow strip -->
-                    <defs>
-                        <marker id="arr" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="5" markerHeight="5" orient="auto">
-                            <path d="M1 1l5 3-5 3" fill="none" stroke="#0D8A6A" stroke-width="1.2" stroke-linecap="round" />
-                        </marker>
-                    </defs>
-                    <!-- Nodes -->
-                    <rect x="4" y="35" width="56" height="30" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="32" y="48" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A" letter-spacing="1">SOLAR</text>
-                    <text x="32" y="59" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">245 kWp</text>
-
-                    <rect x="132" y="35" width="56" height="30" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="160" y="48" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A" letter-spacing="1">INVERTER</text>
-                    <text x="160" y="59" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">AC coupled</text>
-
-                    <!-- BESS -->
-                    <rect x="4" y="2" width="56" height="22" rx="2" fill="rgba(10,107,82,0.1)" stroke="rgba(10,107,82,0.4)" stroke-width="0.8" />
-                    <text x="32" y="15" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">BESS 180kWh</text>
-
-                    <!-- Grid -->
-                    <rect x="260" y="2" width="56" height="22" rx="2" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" />
-                    <text x="288" y="15" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.35)">GRID DNO</text>
-
-                    <!-- Load -->
-                    <rect x="260" y="70" width="56" height="22" rx="2" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" />
-                    <text x="288" y="83" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.35)">LOAD</text>
-
-                    <!-- GEN -->
-                    <rect x="132" y="70" width="56" height="22" rx="2" fill="rgba(200,118,42,0.1)" stroke="rgba(200,118,42,0.3)" stroke-width="0.8" />
-                    <text x="160" y="83" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(200,118,42,0.7)">GEN 150kVA</text>
-
-                    <!-- Lines -->
-                    <line x1="60" y1="50" x2="132" y2="50" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" />
-                    <line x1="188" y1="50" x2="260" y2="81" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.3s" />
-                    <line x1="188" y1="50" x2="260" y2="13" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.6s" />
-                    <line x1="160" y1="35" x2="32" y2="24" stroke="rgba(10,107,82,0.5)" stroke-width="1" stroke-dasharray="3 4" class="flow-line-rev" style="animation-delay:0.9s" />
-                    <line x1="160" y1="65" x2="160" y2="70" stroke="rgba(200,118,42,0.4)" stroke-width="1" stroke-dasharray="3 4" />
-                </svg>
+                <div class="service-img">
+                    <img src="<?= BASE_URL ?>assets/img/commercial/commercial-placeholder-caseStudy.png" alt="Commercial rooftop solar PV array" loading="lazy" />
+                    <div class="service-img-overlay"></div>
+                </div>
                 <div class="cs-metrics-strip">
                     <div class="csm"><span class="csm-val">245<em> kWp</em></span><span class="csm-key">Array size</span></div>
                     <div class="csm"><span class="csm-val">180<em> kWh</em></span><span class="csm-key">Storage</span></div>
@@ -477,100 +441,7 @@ ob_start();
     </div>
 </section>
 
-<!-- ENERGY FLOW INFOGRAPHIC (full width) -->
-<section class="energy-flow reveal">
-    <div class="ef-header">
-        <div class="section-label">System performance</div>
-        <h2 style="font-family:var(--display);font-size:clamp(24px,2.5vw,34px);font-weight:700;color:var(--ink);line-height:1.1;">How your site energy flows</h2>
-    </div>
 
-    <!-- Wide infographic: 24-hour energy profile concept -->
-    <div style="background:var(--ink);padding:40px;overflow:hidden;position:relative;">
-        <div style="position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.02) 39px,rgba(255,255,255,0.02) 40px);"></div>
-        <svg width="100%" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:relative;z-index:1;">
-            <defs>
-                <linearGradient id="solar-grad" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stop-color="#C8762A" stop-opacity="0" />
-                    <stop offset="20%" stop-color="#C8762A" stop-opacity="0.7" />
-                    <stop offset="50%" stop-color="#C8762A" stop-opacity="0.9" />
-                    <stop offset="80%" stop-color="#C8762A" stop-opacity="0.7" />
-                    <stop offset="100%" stop-color="#C8762A" stop-opacity="0" />
-                </linearGradient>
-                <linearGradient id="bess-grad" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stop-color="#0A6B52" stop-opacity="0" />
-                    <stop offset="35%" stop-color="#0A6B52" stop-opacity="0.6" />
-                    <stop offset="65%" stop-color="#0A6B52" stop-opacity="0.8" />
-                    <stop offset="100%" stop-color="#0A6B52" stop-opacity="0.5" />
-                </linearGradient>
-                <linearGradient id="load-grad" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stop-color="rgba(255,255,255,0.15)" />
-                    <stop offset="50%" stop-color="rgba(255,255,255,0.25)" />
-                    <stop offset="100%" stop-color="rgba(255,255,255,0.1)" />
-                </linearGradient>
-            </defs>
-
-            <!-- Y axis labels -->
-            <text x="16" y="30" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">kW</text>
-            <text x="16" y="55" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.15)">500</text>
-            <text x="16" y="105" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.15)">250</text>
-            <text x="16" y="155" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.15)">0</text>
-
-            <!-- Horizontal grid -->
-            <line x1="50" y1="50" x2="890" y2="50" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
-            <line x1="50" y1="100" x2="890" y2="100" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
-            <line x1="50" y1="150" x2="890" y2="150" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
-
-            <!-- Time labels -->
-            <g font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.2)">
-                <text x="50" y="170">00:00</text>
-                <text x="162" y="170">04:00</text>
-                <text x="274" y="170">08:00</text>
-                <text x="386" y="170">12:00</text>
-                <text x="498" y="170">16:00</text>
-                <text x="610" y="170">20:00</text>
-                <text x="848" y="170">24:00</text>
-            </g>
-
-            <!-- Solar generation curve (bell curve, daytime) -->
-            <path d="M50,150 Q100,150 150,150 Q200,148 230,140 Q260,120 290,90 Q320,65 350,52 Q380,44 420,42 Q460,40 490,44 Q530,50 560,65 Q590,82 620,105 Q650,128 670,140 Q700,148 730,150 Q800,150 890,150"
-                fill="url(#solar-grad)" opacity="0.25" />
-            <path d="M50,150 Q100,150 150,150 Q200,148 230,140 Q260,120 290,90 Q320,65 350,52 Q380,44 420,42 Q460,40 490,44 Q530,50 560,65 Q590,82 620,105 Q650,128 670,140 Q700,148 730,150 Q800,150 890,150"
-                fill="none" stroke="#C8762A" stroke-width="2" opacity="0.8" />
-
-            <!-- BESS discharge (afternoon peak) -->
-            <path d="M50,150 Q130,150 190,150 Q220,150 240,145 Q280,130 320,120 Q360,112 400,108 Q440,106 480,108 Q520,112 550,118 Q580,126 610,138 Q640,148 690,150 Q800,150 890,150"
-                fill="url(#bess-grad)" opacity="0.2" />
-            <path d="M50,150 Q130,150 190,150 Q220,150 240,145 Q280,130 320,120 Q360,112 400,108 Q440,106 480,108 Q520,112 550,118 Q580,126 610,138 Q640,148 690,150 Q800,150 890,150"
-                fill="none" stroke="#0A6B52" stroke-width="2" opacity="0.7" stroke-dasharray="6 3" />
-
-            <!-- Site load (relatively flat with morning ramp and evening drop) -->
-            <path d="M50,130 Q100,128 150,125 Q180,110 220,90 Q240,82 280,80 Q400,78 520,80 Q560,82 590,88 Q620,98 660,118 Q690,132 730,136 Q800,140 890,142"
-                fill="url(#load-grad)" opacity="0.08" />
-            <path d="M50,130 Q100,128 150,125 Q180,110 220,90 Q240,82 280,80 Q400,78 520,80 Q560,82 590,88 Q620,98 660,118 Q690,132 730,136 Q800,140 890,142"
-                fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
-
-            <!-- Peak shaving band annotation -->
-            <rect x="280" y="72" width="280" height="16" fill="rgba(10,107,82,0.08)" stroke="rgba(10,107,82,0.2)" stroke-width="0.8" stroke-dasharray="4 4" />
-            <text x="420" y="83" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(10,107,82,0.6)" letter-spacing="1">PEAK SHAVING ACTIVE</text>
-
-            <!-- Grid import zone (shaded early morning) -->
-            <rect x="50" y="50" width="180" height="100" fill="rgba(255,255,255,0.02)" />
-            <text x="82" y="190" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.15)" letter-spacing="1">GRID IMPORT</text>
-
-            <!-- Legend -->
-            <g transform="translate(50, 215)">
-                <line x1="0" y1="6" x2="28" y2="6" stroke="#C8762A" stroke-width="2" />
-                <text x="34" y="10" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.5)">Solar generation</text>
-                <line x1="160" y1="6" x2="188" y2="6" stroke="#0A6B52" stroke-width="2" stroke-dasharray="6 3" />
-                <text x="194" y="10" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.5)">BESS output</text>
-                <line x1="310" y1="6" x2="338" y2="6" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
-                <text x="344" y="10" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.5)">Site load</text>
-                <rect x="450" y="0" width="12" height="12" fill="rgba(10,107,82,0.15)" stroke="rgba(10,107,82,0.3)" stroke-width="0.8" />
-                <text x="468" y="10" font-family="'DM Mono',monospace" font-size="8" fill="rgba(255,255,255,0.5)">Peak shaving zone</text>
-            </g>
-        </svg>
-    </div>
-</section>
 
 <!-- CTA BAND -->
 <section class="cta-band reveal">

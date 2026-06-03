@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle dropdowns on button click
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', (e) => {
+            e.preventDefault();
             e.stopPropagation();
             const parentLi = toggle.closest('.nav-item-dropdown');
             if (!parentLi) return;

@@ -227,7 +227,7 @@ ob_start();
                
                 <div class="check-content">
                     <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Whole-site energy demand modelling and strategy report for planning submission" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-1.png" alt="Whole-site energy demand modelling and strategy report for planning submission" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">Energy strategy &amp; modelling</div>
@@ -237,7 +237,7 @@ ob_start();
             <div class="check-item">       
                 <div class="check-content">
                     <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Renewable energy system design for HMO and community-scale residential developments" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-2.png" alt="Renewable energy system design for HMO and community-scale residential developments" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">HMO &amp; community renewable strategy</div>
@@ -248,7 +248,7 @@ ob_start();
                
                 <div class="check-content">
                      <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Centralised plant room layout containing battery storage, inverter arrays and control systems" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-3.png" alt="Centralised plant room layout containing battery storage, inverter arrays and control systems" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">Plant room design</div>
@@ -259,7 +259,7 @@ ob_start();
                 
                 <div class="check-content">
                      <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Coordinated heating network and domestic hot water strategy design for residential schemes" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-4.png" alt="Coordinated heating network and domestic hot water strategy design for residential schemes" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">Heating &amp; DHW scheme-wide design</div>
@@ -270,7 +270,7 @@ ob_start();
                 
                 <div class="check-content">
                      <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Peak shaving and capacity-constrained design featuring battery storage integration" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-5.png" alt="Peak shaving and capacity-constrained design featuring battery storage integration" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">Peak shaving &amp; capacity-constrained design</div>
@@ -281,7 +281,7 @@ ob_start();
         
                 <div class="check-content">
                      <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="Embedded generation grid applications management and protection relay setups" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-6.png" alt="Embedded generation grid applications management and protection relay setups" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">G99 / G100 application management</div>
@@ -292,7 +292,7 @@ ob_start();
                
                 <div class="check-content">
                     <div class="cap-img">
-                        <img src="<?= BASE_URL ?>assets/img/developers/placeholder.png" alt="In-roof and building-integrated photovoltaics design and solar MCS installation" loading="lazy" />
+                        <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-7.png" alt="In-roof and building-integrated photovoltaics design and solar MCS installation" loading="lazy" />
                         <div class="cap-img-overlay"></div>
                     </div>
                     <div class="check-title">Solar &amp; renewables design and installation</div>
@@ -394,41 +394,10 @@ ob_start();
             <div class="cs-panel">
                 <div class="cs-bg"></div>
                 <span class="cs-badge">Developers — Student Accommodation</span>
-                <!-- Mini site diagram inline -->
-                <svg width="100%" viewBox="0 0 320 90" fill="none" style="position:relative;z-index:1;margin-top:16px;">
-                    <defs>
-                        <marker id="darr" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="5" markerHeight="5" orient="auto">
-                            <path d="M1 1l5 3-5 3" fill="none" stroke="#0D8A6A" stroke-width="1.2" stroke-linecap="round" />
-                        </marker>
-                    </defs>
-                    <!-- Grid (constrained) -->
-                    <rect x="4" y="25" width="60" height="36" rx="2" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
-                    <text x="34" y="39" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.35)">GRID</text>
-                    <text x="34" y="51" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(200,118,42,0.6)">constrained</text>
-                    <!-- Solar -->
-                    <rect x="84" y="4" width="60" height="32" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="114" y="17" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">SOLAR</text>
-                    <text x="114" y="28" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">360 kWp</text>
-                    <!-- BESS -->
-                    <rect x="84" y="52" width="60" height="32" rx="2" fill="rgba(10,107,82,0.15)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="114" y="65" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">BESS</text>
-                    <text x="114" y="76" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">200 kWh</text>
-                    <!-- Hub -->
-                    <rect x="164" y="28" width="60" height="30" rx="2" fill="rgba(10,107,82,0.12)" stroke="#0A6B52" stroke-width="1" />
-                    <text x="194" y="40" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="#0D8A6A">ENERGY</text>
-                    <text x="194" y="51" text-anchor="middle" font-family="'DM Mono',monospace" font-size="6" fill="rgba(255,255,255,0.3)">centre</text>
-                    <!-- Building -->
-                    <rect x="244" y="20" width="68" height="46" rx="2" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-                    <text x="278" y="40" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.35)">STUDENT</text>
-                    <text x="278" y="52" text-anchor="middle" font-family="'DM Mono',monospace" font-size="7" fill="rgba(255,255,255,0.35)">BLOCK</text>
-                    <!-- Infra upgrade avoided label -->
-                    <line x1="4" y1="43" x2="84" y2="68" stroke="rgba(200,118,42,0.3)" stroke-width="0.8" stroke-dasharray="3 3" />
-                    <!-- Lines -->
-                    <line x1="64" y1="43" x2="164" y2="43" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" stroke-dasharray="3 4" />
-                    <line x1="144" y1="20" x2="164" y2="38" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" />
-                    <line x1="144" y1="68" x2="164" y2="52" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.4s" />
-                    <line x1="224" y1="43" x2="244" y2="43" stroke="#0D8A6A" stroke-width="1" stroke-dasharray="4 3" class="flow-line" style="animation-delay:0.8s" />
-                </svg>
+                <div class="cap-img">
+                    <img src="<?= BASE_URL ?>assets/img/developers/developer-placeholder-case-Study.png" alt="Capacity-constrained site — solar and storage avoided grid infrastructure upgrade" loading="lazy" />
+                    <div class="cap-img-overlay"></div>
+                </div>
                 <div class="cs-metrics-strip">
                     <div class="csm"><span class="csm-val">360<em> kWp</em></span><span class="csm-key">Solar array</span></div>
                     <div class="csm"><span class="csm-val">200<em> kWh</em></span><span class="csm-key">Battery storage</span></div>

@@ -19,7 +19,7 @@ if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['SERVER_ADDR'] === '127.0.
 define('BASE_URL', BASE_PATH . '/');
 
 // Global Contact Details
-define('CONTACT_EMAIL', 'hello@fortenergy.co.uk');
+define('CONTACT_EMAIL', 'muhammadaqibkhan001@gmail.com');
 define('CONTACT_PHONE', '01670 898220');
 define('CONTACT_PHONE_TEL', '+441670898220');
 
